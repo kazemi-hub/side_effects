@@ -10,10 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.0",
+    "bootstrap": "^4.4.1",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1",
+    "node": "^11.15.0",
+    "scrollmagic": "^2.0.7"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7"
