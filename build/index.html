@@ -8,9 +8,7 @@
 
   <link rel="stylesheet" href="./styles/bootstrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="./scripts/jquery.slim.min.js"></script>
-  <script src="./scripts/bootstrap.js"></script>
-  <script src="./scripts/script.js"></script>
+
   <style>
         @import url(./styles/styles.css);
         @import url(./styles/Fonts.css);
@@ -52,7 +50,7 @@
           <a class="nav-link" href="#">انجمن</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             متافیزیک و پیدایش جهان
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -68,16 +66,11 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">تماس با ما</a>
-        </li>
+        <!-- </li>
         <li class="nav-item">
           <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">ثبت نام/ورود</a>
-        </li>
+        </li> -->
       </ul>
-
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     
     </div>
   </nav> 
@@ -112,13 +105,24 @@
         </div>
           <h1>جهان را لمس کن، ای فرشتهٔ فرو افتاده...</h1>
           <p>جهان سازمانی به‌طور کامل پویا است. این جهان روزی آغاز شد. شاید با یک انبساط بزرگ ناگهانی مادّه؛ و ممکن است روزی پایان یابد. در همین زمان (بین آغاز و پایان) با انبساط بیشتر جهان کهکشان‌ها از یکدیگر دورتر و دورتر می‌شوند. جهان با فعّالیّت و حرکت در حال بزرگ‌شدن است.</p>
-          <button type="submit" class="btn home-btn">موافقم</button>
+          
+          <div class="sidebar" id="sidebar">
+            <button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" ></span></button>
+            <a href="#main"><button class="buttons"><span><img class="icon2" src="./image/PNG/moon.png"></span></button></a>
+            <a href="#main-page2"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png"></span></button></a>
+            <a href="#aliens"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien.png"></span></button></a>
+            <button class="buttons"><span><img class="icon5" src="./image/PNG/spaceship.png"></span></button>
+            <button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png"></span></button>
+            <button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png"></span></button>
+            <a href="#footer"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png"></span></button></a>
         </div>
+            
+      </div>
       </div>
     </div>      
   </div>
 </Section>
-  <div class="container" style="margin-top:30px">
+  <div class="container-fluid" style="margin-top:30px">
     <div class="row">
       <div class="col-sm-4">
         <h2>About Me</h2>
@@ -160,9 +164,27 @@
   </div>
   
   <div class="jumbotron text-center" style="margin-bottom:0">
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
     <p>Footer</p>
   </div>
   
+  <script src="./scripts/jquery.slim.min.js"></script>
+  <script src="./scripts/bootstrap.js"></script>
+  <script src="./scripts/TweenMax.min.js"></script>
+  <script src="./scripts/minified/ScrollMagic.min.js"></script>
+  <script src="./scripts/animation.gsap.min.js"></script>
+  <script src="./scripts/debug.addIndicators.min.js"></script>
+  <script src="./scripts/EasePack.min.js"></script>
+  <script src="./scripts/TimelineLite.min.js"></script>
+  <script src="./scripts/TweenLite.min.js"></script>
+  <script src="./scripts/CSSPlugin.min.js"></script>
+  <script src="./scripts/script.js"></script>
+
   </body>
   </html>
   
