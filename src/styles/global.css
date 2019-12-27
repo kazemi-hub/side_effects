@@ -1,6 +1,15 @@
+
+/*-------------Global Styles------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body{
     background: skyblue;
 }
+
 [class*="col-"]
 {
     float : left;
@@ -48,4 +57,106 @@ body{
     content : "";
     clear : both;
     display : block;
+}
+
+/*-------------Header------------*/
+#header{
+    background-image: url(../image/header.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-brand img{
+    /* float: left; */
+    width: 300px;
+    margin-left: 30px;
+}
+
+.navbar-toggler{
+    border: none!important;
+    outline: none!important;
+}
+
+nav .fa-bars{
+    color:rgb(255, 255, 255);
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.navbar-nav li a{
+    float: right;
+    color: rgb(167, 243, 248)!important;
+    /* text-shadow: 2px 3px 8x #fd4; */
+    direction: rtl;
+    font-family: vazir;
+    font-size: 1.2em;
+    transition: 0.5s ease-in-out;
+    margin-right: 20px;
+}
+
+.navbar-nav li a:hover{
+    float: right;
+    color: rgb(252, 122, 1)!important;
+    /* text-shadow: 2px 3px 8x #fd4; */
+    direction: rtl;
+    font-family: vazir;
+    font-size: 1.2em;
+    /* background: #fff; */
+}
+
+.dropdown-menu {
+    text-align: right;
+    direction: rtl;
+    background: transparent;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+.dropdown-item {
+    background: none;
+    transition: ease-in-out;
+}
+
+/*-------------Welcome Section------------*/
+.welcome{
+    padding: 50px 100px;
+    margin-top: -140px;
+    background: radial-gradient(circle, rgb(2, 155, 243) 0%, rgb(244, 244, 247) 100%);
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+    border: 1px solid rgb(167, 243, 248);
+    border-radius: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: -200px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container img {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 50% 50%;
+    border: 1px solid rgb(167, 243, 248);
+    box-shadow: 2px 4px 10px solid rgb(167, 243, 248); 
+  }
+.welcome h1{
+    color: rgb(5, 22, 24);
+    font-family: vazir;
+    direction: rtl;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding-top: 10px;
+}
+
+.welcome p{
+    color: #000;
+    font-family: vazir;
+    direction: rtl;
 }

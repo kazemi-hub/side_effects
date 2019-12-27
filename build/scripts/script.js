@@ -1,1 +1,1 @@
-console.log("user!"),console.log("hello I'm");
+$(function(){var n=0;!function e(){var t;var l=document.getElementsByClassName("mySlides");for(t=0;t<l.length;t++)l[t].style.display="none";n++;n>l.length&&(n=1);l[n-1].style.display="block";setTimeout(e,2e3)}()});
