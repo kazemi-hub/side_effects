@@ -5,8 +5,7 @@
     margin: 0;
 }
 
-[class*="col-"]
-{
+[class*="col-"]{
     float : left;
     padding : 15px;
     
@@ -14,8 +13,12 @@
 
 [class*="col-"]{
         width : 100%;
-    }
-    
+}
+
+body{
+    background-color: #fff;
+}
+
 @media only screen and (min-width:600px){
     .col-m-1{width:8.33%;}
     .col-m-2{width:16.66%;}
@@ -31,6 +34,7 @@
     .col-m-12{width:100%;}
 
 }
+
 @media only screen and (min-width:768px){
     .col-1{width:8.33%;}
     .col-2{width:16.66%;}
@@ -55,6 +59,7 @@
 }
 
 /*-------------Header------------*/
+
 #header{
     background-image: url(../image/header.jpg);
     height: 75vh;
@@ -112,6 +117,7 @@ nav .fa-bars{
 }
 
 /*-------------Welcome Section------------*/
+
 .welcome{
     padding: 50px 100px;
     margin-top: -110px;
@@ -142,13 +148,13 @@ nav .fa-bars{
 }
 
 .welcome h1{
-    color: rgb(5, 22, 24);
+    color: rgb(250, 253, 253);
     font-family: vazir;
     direction: rtl;
     font-weight: bold;
     font-size: 1.5em;
     padding-top: 10px;
-    /* text-shadow: 1px 2px 4px #fff; */
+    text-shadow: 1px 2px 4px rgb(10, 10, 10);
 }
 
 .welcome p{
@@ -156,7 +162,7 @@ nav .fa-bars{
     font-family: vazir;
     direction: rtl;
     font-size: 0.9em;
-
+    text-shadow: 1px 2px 4px rgb(75, 170, 177);
 }
 
 .sidebar{
@@ -169,14 +175,14 @@ nav .fa-bars{
     border: 1px solid rgb(167, 243, 248);
     box-shadow: 0 0 20px 7px rgba(0,0,0,0.2); 
     border-radius: 50%;
-  }
+}
 
-  .sidebar a:hover {
+.sidebar a:hover {
     text-decoration: none;
     border: none;
-  }
+}
 
-  .buttons {
+.buttons {
     border: none;
     padding-left: 0;
     border-radius: 90%;
@@ -184,32 +190,97 @@ nav .fa-bars{
     padding-left: -15px;
     transition: all 1s;
     cursor: pointer;
-  }
+}
   
-  .buttons span:hover {
+.buttons span:hover {
     transform: rotate(360deg);
     transition: all 0.5s;
-  }
-  .buttons span {
+}
+
+.buttons span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
   
-  .buttons span:after {
-    /* content: #1F; */
+.buttons span:after {
     position: absolute;
-    /* opacity: 0; */
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
-  .buttons:hover span:after {
+.buttons:hover span:after {
     opacity: 0;
     right: 0;
-  }
-  .buttons :visited {
+}
+
+.buttons :visited {
     border: none;
-  }
+}
+
+/*-------------Introduction Section------------*/
+
+#introduction{
+    padding-top: 10px;
+    padding-bottom: 100px;
+    font-family: vazir;
+}
+
+#introduction img{
+    padding-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#introduction .col-sm-6{
+    padding: 20px 10px;
+    text-align: right;
+    direction: rtl;
+}
+
+#introduction h3{
+    color: rgb(3, 2, 59);
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 2px 4px rgb(75, 170, 177);
+}
+
+#introduction p{
+    color: rgb(3, 2, 59) ;
+}
+
+.universe-img {
+    margin-top: 0px;
+    transition: all 1s ease-out;
+    
+}
+
+#universe-text {
+    margin-top: 50px;
+    transition: all 1s ease-out;
+    
+}
+
+.universe-img1 {
+    margin-top: 0px;
+    transition: all 1s ease-out;
+    /* margin-right: -370px; */
+}
+
+#universe-text1 {
+    margin-top: 50px;
+    /* margin-left: -50px; */
+    transition: all 1s ease-out;
+    
+}
+
+#introduction .col-sm-5{
+    padding: 20px 10px;
+    text-align: right;
+    direction: rtl;
+}

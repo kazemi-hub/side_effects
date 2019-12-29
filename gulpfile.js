@@ -8,8 +8,8 @@ gulp.task('browserSync', function() {
        server: {
           baseDir: 'build'
        },
-    })
-})
+    });
+});
 
 gulp.task('js', function(){
     gulp.src('src/scripts/*.js')
@@ -33,9 +33,9 @@ gulp.task('css',function(){
 
 gulp.task('default', ['browserSync','js','css'],function(){
     gulp.watch('src/styles/*.css', function() {
-        gulp.run('css');
+      gulp.run('css');
      });
      gulp.watch('src/scripts/*.js', function() {
         gulp.run('js');
-     });
+   });
 })

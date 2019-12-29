@@ -19,6 +19,7 @@ $(function() {
     .from(icon5,0.2,{y:450,autoAlpha:0,ease:Power2.easeOut, opacity:0})
     .from(icon6,0.2,{y:500,autoAlpha:0,ease:Power2.easeOut, opacity:0})
     .from(icon7,0.5,{y:550,autoAlpha:0,ease:Power2.easeOut, opacity:0})
+    
 
     var slideIndex = 0;
     showSlides();
@@ -37,4 +38,5 @@ $(function() {
       setTimeout(showSlides, 2000);
     }
 
+    console.log("it worked..")
   });
