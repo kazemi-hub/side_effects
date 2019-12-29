@@ -182,12 +182,13 @@ nav .fa-bars{
     border-radius: 90%;
     background-color: transparent;
     padding-left: -15px;
-    transition: all 0.5s;
+    transition: all 1s;
     cursor: pointer;
   }
   
   .buttons span:hover {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
+    transition: all 0.5s;
   }
   .buttons span {
     cursor: pointer;
