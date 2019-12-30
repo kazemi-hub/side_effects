@@ -65,6 +65,7 @@ body{
     height: 75vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .navbar-brand img{
@@ -87,7 +88,7 @@ nav .fa-bars{
 
 .navbar-nav li a{
     float: right;
-    color: rgb(167, 243, 248)!important;
+    color: #03d9ff!important;
     direction: rtl;
     font-family: vazir;
     font-size: 0.9em;
@@ -193,8 +194,8 @@ nav .fa-bars{
 }
   
 .buttons span:hover {
-    transform: rotate(360deg);
-    transition: all 0.5s;
+    transform: rotate(1000deg);
+    transition: all 1s;
 }
 
 .buttons span {
@@ -269,12 +270,10 @@ nav .fa-bars{
 .universe-img1 {
     margin-top: 0px;
     transition: all 1s ease-out;
-    /* margin-right: -370px; */
 }
 
 #universe-text1 {
     margin-top: 50px;
-    /* margin-left: -50px; */
     transition: all 1s ease-out;
     
 }
@@ -283,4 +282,136 @@ nav .fa-bars{
     padding: 20px 10px;
     text-align: right;
     direction: rtl;
+}
+
+/*-------------Planets-Section------------*/
+
+#planets{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: radial-gradient(circle, rgba(0,0,0,0.1) 10%,rgba(0,0,0,0.6) 100%),url(../image/space12.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: justify;
+    
+} 
+
+#planets .col-sm-4{
+    padding: 50px 50px;
+    direction: ltr;
+}
+
+.moon-image img{
+    width: 200px;
+    height: px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 5px  rgb(240, 237, 234);
+    margin-top: -30px;
+}
+
+#planets .col-sm-4 .earth-image{
+    text-align: center;
+}
+
+#planets .col-sm-4 .sun-image{
+    text-align: right;
+}
+.review-moon {
+    direction: rtl;
+    text-align: justify;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: vazir;
+    padding: 10px 10px 10px 30px;
+    background-color: rgba(244, 244, 247,0.2);
+    box-shadow: 0px 0px 30px 5px  rgb(240, 237, 234);
+}
+
+.review-moon h1{
+   color: #fff;
+   text-shadow: 0px 0px  10px rgb(255, 255, 255);
+   font-size: 3em;
+   font-weight: lighter;
+}
+.review-earth h1{
+   color: #fff;
+   text-shadow: 0px 0px  10px rgb(1, 202, 252);
+   font-size: 3em;
+   font-weight: lighter;
+   text-align: center;
+
+}
+.review-sun h1{
+   color: #fff;
+   text-shadow: 0px 0px  10px rgb(252, 122, 1);
+   font-size: 3em;
+   font-weight: lighter;
+   text-align: left;
+}
+
+.review-moon p{
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px  5px rgb(10, 10, 10);
+    text-indent: 20px;
+    line-height: 24px;
+}
+
+.review-sun {
+    direction: rtl;
+    text-align: justify;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: vazir;
+    padding: 10px 10px 10px 30px;
+    background-color: rgba(244, 244, 247,0.2);
+    box-shadow: 0px 0px 30px 5px  rgb(252, 122, 1);
+}
+
+.sun-image img{
+    width: 200px;
+    height: px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 5px  rgb(252, 122, 1);
+    margin-top: -30px;
+}
+
+.review-sun p{
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(10, 10, 10);
+    text-indent: 20px;
+    line-height: 24px;
+}
+
+.review-earth {
+    margin-top: -50px;
+    direction: rtl;
+    text-align: justify;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: vazir;
+    padding: 10px 10px 10px 30px;
+    background-color: rgba(244, 244, 247,0.2);
+    box-shadow: 0px 0px 30px 5px rgb(1, 202, 252);
+}
+
+.earth-image img{
+    width: 200px;
+    height: px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 5px rgb(1, 202, 252);
+    margin-top: -30px;
+}
+
+.review-earth p{
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px  5px rgb(10, 10, 10);
+    text-indent: 20px;
+    line-height: 24px;
 }
