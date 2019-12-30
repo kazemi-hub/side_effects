@@ -61,7 +61,7 @@ body{
 /*-------------Header------------*/
 
 #header{
-    background-image: url(../image/header.jpg);
+    background-image: url(../image/header-3.jpg);
     height: 75vh;
     background-size: cover;
     background-position: center;
@@ -79,7 +79,7 @@ body{
 }
 
 nav .fa-bars{
-    color:rgb(255, 255, 255);
+    color:rgb(252, 122, 1);
     font-size: 30px;
     margin-right: 20px;
     margin-bottom: 0;
@@ -88,13 +88,14 @@ nav .fa-bars{
 
 .navbar-nav li a{
     float: right;
-    color: #03d9ff!important;
+    color: #fff!important;
     direction: rtl;
     font-family: vazir;
     font-size: 0.9em;
     transition: 0.5s ease-in-out;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-top: 0px;
+    font-weight: lighter;
 }
 
 .navbar-nav li a:hover{
@@ -122,7 +123,7 @@ nav .fa-bars{
 .welcome{
     padding: 50px 100px;
     margin-top: -110px;
-    background: radial-gradient(circle, rgb(2, 155, 243) 0%, rgb(244, 244, 247) 100%);
+    background: radial-gradient(circle, #03d9ff 0%, rgb(244, 244, 247) 100%);
     box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
     border: 1px solid rgb(167, 243, 248);
     border-radius: 10px;
@@ -144,8 +145,20 @@ nav .fa-bars{
     height: 250px;
     background-size: cover;
     border-radius: 50% 50%;
-    border: 1px solid rgb(167, 243, 248);
+    border: 2px solid rgb(252, 122, 1);
     box-shadow: 0 0 20px 7px rgba(0,0,0,0.2); 
+}
+.slideshow-container img:hover{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 50% 50%;
+    border: 1px solid rgb(167, 243, 248);
+    box-shadow: 0px 0px 50px 15px  rgb(252, 122, 1);
+    transition: 1s all ease-out ;
+    margin-left: 25px;
+    cursor: pointer;
 }
 
 .welcome h1{
@@ -289,7 +302,7 @@ nav .fa-bars{
 #planets{
     padding-top: 50px;
     padding-bottom: 50px;
-    background: radial-gradient(circle, rgba(0,0,0,0.1) 10%,rgba(0,0,0,0.6) 100%),url(../image/space12.jpg);
+    background: radial-gradient(circle, rgba(0,0,0,0.4) 10%,rgba(0,0,0,0.4) 100%),url(../image/space12.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -354,7 +367,7 @@ nav .fa-bars{
 .review-moon p{
     font-weight: lighter;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px  5px rgb(10, 10, 10);
+    text-shadow: 0px 0px  5px #000;
     text-indent: 20px;
     line-height: 24px;
 }
@@ -382,7 +395,7 @@ nav .fa-bars{
 .review-sun p{
     font-weight: lighter;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 5px rgb(10, 10, 10);
+    text-shadow: 0px 0px 5px #000;
     text-indent: 20px;
     line-height: 24px;
 }
@@ -411,7 +424,7 @@ nav .fa-bars{
 .review-earth p{
     font-weight: lighter;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px  5px rgb(10, 10, 10);
+    text-shadow: 0px 0px  5px #000;
     text-indent: 20px;
     line-height: 24px;
 }
