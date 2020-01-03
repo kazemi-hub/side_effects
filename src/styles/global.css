@@ -5,6 +5,9 @@
     margin: 0;
 }
 
+body{
+    background-color: #9dd1db !important;
+}
 [class*="col-"]{
     float : left;
     padding : 15px;
@@ -13,10 +16,6 @@
 
 [class*="col-"]{
         width : 100%;
-}
-
-body{
-    background-color: #fff;
 }
 
 @media only screen and (min-width:600px){
@@ -162,13 +161,13 @@ nav .fa-bars{
 }
 
 .welcome h1{
-    color: rgb(250, 253, 253);
+    color: #000;
     font-family: vazir;
     direction: rtl;
     font-weight: bold;
     font-size: 1.5em;
     padding-top: 10px;
-    text-shadow: 1px 2px 4px rgb(10, 10, 10);
+    text-shadow: 1px 2px 4px rgb(2, 139, 139);
 }
 
 .welcome p{
@@ -207,15 +206,15 @@ nav .fa-bars{
 }
   
 .buttons span:hover {
-    transform: rotate(1000deg);
-    transition: all 1s;
+    transform: rotate(360deg);
+    transition: all 0.8s;
 }
 
 .buttons span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    transition: 0.8s;
 }
   
 .buttons span:after {
@@ -237,7 +236,7 @@ nav .fa-bars{
 /*-------------Introduction Section------------*/
 
 #introduction{
-    padding-top: 10px;
+    padding-top: 100px;
     padding-bottom: 100px;
     font-family: vazir;
 }
@@ -257,7 +256,7 @@ nav .fa-bars{
 }
 
 #introduction h3{
-    color: rgb(3, 2, 59);
+    color: rgb(7, 7, 12);
     margin: 20px auto;
     font-weight: bold;
     font-size: 1.5em;
@@ -297,12 +296,84 @@ nav .fa-bars{
     direction: rtl;
 }
 
+/*----------------Slider-Section---------------*/
+
+.hi-slide{
+    position:relative;
+    width:754px;
+    height:292px;
+    margin:115px auto 0;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev{
+    position:absolute;
+    top:50%;
+    width:40px;
+    height:80px;
+    margin-top:-40px;
+    border-radius:5px;
+    line-height:80px;
+    text-align:center;
+    cursor:pointer;
+    background-color:#666;
+    color:#fff;
+    opacity:.7;
+    transition:all .6s;
+    font-size:30px;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+    opacity:1;
+    background-color:#444;
+}
+.hi-slide .hi-prev{
+    left:-60px;
+}
+.hi-slide .hi-prev::before{
+    content:'<';
+}
+.hi-slide .hi-next{
+    right:-60px;
+}
+.hi-slide .hi-next::before{
+    content:'>';
+}
+.hi-slide>ul{
+    list-style:none;
+    position:relative;
+    width:754px;
+    height:292px;
+    margin:0;
+    padding:0;
+}
+.hi-slide>ul>li{
+    overflow:hidden;
+    position:absolute;
+    z-index:0;
+    left:377px;
+    top:146px;
+    width:0;
+    height:0;
+    margin:0;
+    padding:0;
+    border:2px solid #fff;
+    border-radius:5px;
+    background-color:#333;
+    cursor:pointer;
+}
+.hi-slide>ul>li>img{
+    width:100%;
+    height:100%;
+}
+
 /*-------------Planets-Section------------*/
 
 #planets{
+    /* display: none; */
     padding-top: 50px;
     padding-bottom: 50px;
-    background: radial-gradient(circle, rgba(0,0,0,0.4) 10%,rgba(0,0,0,0.4) 100%),url(../image/space12.jpg);
+    background: radial-gradient(circle, rgba(0,0,0,0.8) 10%,rgba(0,0,0,0.8) 100%),url(../image/space15.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -311,13 +382,12 @@ nav .fa-bars{
 } 
 
 #planets .col-sm-4{
-    padding: 50px 50px;
+    padding: 100px 20px;
     direction: ltr;
 }
 
 .moon-image img{
-    width: 200px;
-    height: px;
+    width: 150px;
     border: none;
     border-radius: 50%;
     box-shadow: 0px 0px 30px 5px  rgb(240, 237, 234);
@@ -384,7 +454,7 @@ nav .fa-bars{
 }
 
 .sun-image img{
-    width: 200px;
+    width: 150px;
     height: px;
     border: none;
     border-radius: 50%;
@@ -413,8 +483,7 @@ nav .fa-bars{
 }
 
 .earth-image img{
-    width: 200px;
-    height: px;
+    width: 150px;
     border: none;
     border-radius: 50%;
     box-shadow: 0px 0px 50px 5px rgb(1, 202, 252);

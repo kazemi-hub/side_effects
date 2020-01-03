@@ -11,7 +11,7 @@ $(function() {
   $(".sidebar").show();
   var tll= new TimelineLite();
   tll
-    .from(icon1,0.5,{y:200,autoAlpha:0,ease:Power1.bonus, opacity:0},2)
+    .from(icon1,0.5,{y:200,autoAlpha:0,ease:Power1.bonus, opacity:0},5)
     .from(icon0,0.2,{y:250,autoAlpha:0,ease:Power2.easeOut, opacity:0})
     .from(icon2,0.2,{y:300,autoAlpha:0,ease:Power2.easeOut, opacity:0})
     .from(icon3,0.2,{y:350,autoAlpha:0,ease:Power2.easeOut, opacity:0})
@@ -37,6 +37,8 @@ $(function() {
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 4000);
     }
+    
+    $(".slide").hiSlide();
 
     console.log("it worked..")
   });
