@@ -23,14 +23,16 @@
             src: url(./Fonts/vazir-font-master/dist/Vazir-bold.woff2);
       }
 
-    .fakeimg {
-      height: 200px;
-      background: #aaa;
-    }
+
     </style>
   </head>
   <body>
 
+  <!---------------------Scroll-Top--------------------->  
+<div class='scrolltop'>
+    <div class='scroll'><span><img src="./image/Scroll.png"/></span></div>
+</div>
+    
   <!----------------------Header------------------------>
 
   <div id="header">
@@ -102,7 +104,7 @@
           <h1>جهان را لمس کن، ای فرشتهٔ فرو افتاده...</h1>
           <p>جهان سازمانی به‌طور کامل پویا است. این جهان روزی آغاز شد. شاید با یک انبساط بزرگ ناگهانی مادّه؛ و ممکن است روزی پایان یابد. تمامی آنچه در کیهان وجود دارد در وجود ما نهادینه شده است! هر کدام ازما شگفتی برابر با کل کیهان داریم، ما در مقابل این جهان مسئولیم. </p>
           <div class="sidebar" id="sidebar">
-            <a href="#main" ><button class="buttons"><span><img class="icon2" src="./image/PNG/moon.png" alt="سیارات" title="سیارات"></span></button></a>
+            <a href="#slider" ><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات" title="سیارات"></span></button></a>
             <button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" alt="نیل آرمسترانگ" title="نیل آرمسترانگ"></span></button>
             <a href="#main-page2"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها" title="شهاب سنگ ها"></span></button></a>
             <a href="#aliens"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien.png" alt="فرازمینی ها" title="فرازمینی ها"></span></button></a>
@@ -110,6 +112,7 @@
             <button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png" alt="سیاره زحل" title="سیاره زحل"></span></button>
             <button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png" alt="هفت اورنگ کهین" title="هفت اورنگ کهین"></span></button>
             <a href="#footer"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما" title="ورود/تماس با ما"></span></button></a>
+            <button  class="Power-button" onclick="darkMode()"><span><img src="./image/PNG/Dark.png" alt="ورود/تماس با ما" title="حالت تاریک"></span></button>
         </div>
             
       </div>
@@ -145,7 +148,7 @@
 
                   یکی از مهم‌ترین و اساسی‌ترین موضوعات در هستی‌شناسی، تعریف وجود است، مطالعه فلسفی از ماهیت بودن، وجود داشتن و کل واقعیت به علاوه دسته‌بندی موجودات و روابطشان. هستی‌شناسی که خود قسمتی از فلسفه علوم ماورا، طبیعت است به سوالاتی دربارهٔ این که چه موجودات و نهادهایی وجود دارند یا می‌توان گفت که هستند، می‌پردازد و اینکه چنین موجوداتی ایا قابل دسته‌بندی در یک سلسله مراتب و زیرمجموعه ان با در نظر گرفتن وجه تشابه و تمایزشان هستند یا نه.</p>
               </div>
-
+  
               <div class=" offset-sm-1 col-sm-5 text-center">
                       <div class="universe-img1">
                           <img src="./image/Space8.png" class="image-fluid" />
@@ -158,17 +161,26 @@
 <!------------------Slides------------------->
 <section id="slider">
   <div class="container">
-    <div class="col-lg-12 text-center">
+    <div class="col-md-12 text-center">
         <div class="slide hi-slide">
           <div class="hi-prev"></div>
           <div class="hi-next"></div>
           <ul id="ul-img"></ul>
+          <p class="hiddencontent0">gggg</p>
           <script>
+              let hiddencontent0=['02', '021', '54654','hgjfghfh', 'uygyugt', 'fgfghf', '98787', '987'];
               let imgCollection = [];
-              for(let i=1; i<9; i++) {
-                imgCollection[i] = `<li><img src="./image/Slide${i}.jpg"></li>`;
+              let imgTitle=['','زوپیتر', 'ماه', 'پلوتونیوم', 'زمین', 'ونوس', 'مارس','خورشید']
+              for(let i=1; i<8; i++) {
+                imgCollection[i] = `<li><img src="./image/Slide${i}.jpg" title=${imgTitle[i]}></li>`;
+                  
+                  hiddencontent0 = "hfghj";
+                
               }
-              document.getElementById("ul-img").innerHTML = imgCollection;              
+              document.getElementById("ul-img").innerHTML = imgCollection;
+              document.getElementsByClassName("text-count0").Text = hiddencontent0;
+
+                            
           </script>
         </div>
     </div>
@@ -207,7 +219,7 @@
             <div class="review-sun">
               <h1><i class="fa fa-sun-o" aria-hidden="true"></i></h1>
             <p>
-              خورشید (نام‌های ادبی یا قدیمی: خور، هور، مهر، روز) یکی از ستارگان کهکشان راه شیری و تنها ستارهٔ سامانهٔ خورشیدی است که در مرکز آن جای دارد. خورشید یک کُرهٔ کامل است که از پلاسمای داغ ساخته شده‌است و در میانهٔ آن میدان مغناطیسی برقرار است. این ستاره که قطری نزدیک به ۱٬۳۹۲٬۰۰۰ کیلومتر دارد 
+              خورشید (نام‌های ادبی یا قدیمی: خور، هور، مهر، روز) یکی از ستارگان کهکشان راه شیری و تنها ستارهٔ سامانهٔ خورشیدی است که در مرکز آن جای دارد. خورشید یک کُرهٔ کامل است که از پلاسمای داغ ساخته شده‌است و در میانهٔ آن میدان مغناطیسی برقرار است. این ستاره قطری نزدیک به ۱٬۳۹۲٬۰۰۰ کیلومتر دارد 
             <br><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%A7%D9%87"><span>بیشتر بدانید</span></a></p>
             </div>
             <div class="sun-image">
@@ -287,9 +299,16 @@
     })
       .setTween(tlm)
       .addTo(controller);
-    
+      //Introduction-Scripts-End
+      //Dark-Mode
+      function darkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      
+   }
+
     </script>
-    <!-------------Introduction-Scripts-End------------>
+    
 
   </body>
   </html>
