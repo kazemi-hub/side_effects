@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135607956-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135607956-2');
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="profile" href="https://gmpg.org/xfn/11">
   <title>D E A D S P A C E</title>
 
   <link rel="stylesheet" href="./styles/bootstrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
   <style>
         @import url(./styles/styles.css);
         @import url(./styles/Fonts.css);
@@ -112,7 +121,7 @@
             <button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png" alt="سیاره زحل" title="سیاره زحل"></span></button>
             <button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png" alt="هفت اورنگ کهین" title="هفت اورنگ کهین"></span></button>
             <a href="#footer"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما" title="ورود/تماس با ما"></span></button></a>
-            <button  class="Power-button" onclick="darkMode()"><span><img src="./image/PNG/Dark.png" alt="ورود/تماس با ما" title="حالت تاریک"></span></button>
+            <button  class="Power-button" onclick="darkMode()"><span><img src="./image/PNG/Dark.png" alt="حالت تاریک" title="حالت تاریک"></span></button>
         </div>
             
       </div>
@@ -253,8 +262,10 @@
   <script src="./scripts/TweenLite.min.js"></script>
   <script src="./scripts/CSSPlugin.min.js"></script>
   <script src="./scripts/script.js"></script>
+  
 
-  <!-------------Introduction-Scripts-Start------------>
+
+  
   <script>
     var controller = new ScrollMagic.Controller();
     let tlm = new TimelineMax({});
@@ -299,16 +310,9 @@
     })
       .setTween(tlm)
       .addTo(controller);
-      //Introduction-Scripts-End
-      //Dark-Mode
-      function darkMode() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-      
-   }
 
     </script>
-    
+    <!-------------Introduction-Scripts-End------------>
 
   </body>
   </html>

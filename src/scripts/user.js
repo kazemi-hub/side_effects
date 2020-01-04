@@ -46,10 +46,21 @@ $(function() {
           $('.scrolltop').stop(true, true).fadeOut(5000);
       }
   });
-  $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$("#header").offset().top},"1000");return false})})
+  $(function(){$(".scroll").click(function(){
+    $("html,body").animate({
+      scrollTop:$("#header").offset().top
+    },"1000");
+    return false})
+  });
 
   //Planet Slide
     $(".slide").hiSlide();
 
     console.log("it worked..")
   });
+
+   //Dark-Mode
+   function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+   };

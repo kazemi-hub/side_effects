@@ -4398,6 +4398,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-toggler {
+  position: relative;
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
