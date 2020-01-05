@@ -56,11 +56,15 @@ $(function() {
   //Planet Slide
     $(".slide").hiSlide();
 
-    console.log("it worked..")
+    
+      $('.nav-button').click(function(){
+      $('body').toggleClass('nav-open');
+      });
+      
+      $('.nav-item').click(function(){
+      $('.nav-open').toggleClass('nav-open');
+      });
+
   });
 
-   //Dark-Mode
-   function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-   };
+  

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135607956-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,16 +9,17 @@
 
   gtag('config', 'UA-135607956-2');
 </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <title>D E A D S P A C E</title>
 
-  <link rel="stylesheet" href="./styles/bootstrap.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
   <style>
+        @import url(./styles/bootstrap.css);
+        @import url(./styles/font-awesome/css/font-awesome.min.css);
         @import url(./styles/styles.css);
         @import url(./styles/Fonts.css);
     
@@ -44,42 +45,35 @@
     
   <!----------------------Header------------------------>
 
-  <div id="header">
+
+
+  <div id="header" class="head-main">
+
+    <div class="navbar box-shadow">
+      <div class="d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center"></a>
+        <a class="nav-button "><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
+      </div>
+    </div> <!--navbar end-->
+    
+    <div class="fixed-top main-menu">
+      <div class="flex-center p-5">
+        <ul class="nav flex-column">
+          <li class="nav-item delay-1"><a class="nav-link"  href="index.html">خانه</a></li>
+          <li class="nav-item delay-2"><a class="nav-link" href="#">انجمن</a></li>
+          <li class="nav-item delay-3"><a class="nav-link" href="#"> متافیزیک و پیدایش جهان</a></li>
+          <li class="nav-item delay-4"><a class="nav-link" href="#">پیدایش ستارگان</a></li>
+          <li class="nav-item delay-5"><a class="nav-link" href="#">شکل گیری زمین</a></li>
+          <li class="nav-item delay-6"><a class="nav-link" href="#">کائنات و انرژی تاریک</a></li>
+          <li class="nav-item delay-7"><a class="nav-link" href="#">درباره ما</a></li>
+          <li class="nav-item delay-8"><a class="nav-link" href="#">تماس با ما</a></li>
+        </ul>
+      </div>
+    </div>
+
+
   <nav class="navbar  navbar-light ">
     <a class="navbar-brand" href="#"><img src="./image/logo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </button>
-    
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">خانه</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">انجمن</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            متافیزیک و پیدایش جهان
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">بیگ بنگ</a>
-            <a class="dropdown-item" href="#">پیدایش ستارگان</a>
-            <a class="dropdown-item" href="#">شکل گیری زمین</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">کائنات و انرژی تاریک</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">درباره ما</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">تماس با ما</a>
-      </ul>
-    
-    </div>
   </nav> 
 </div>
   
@@ -113,7 +107,7 @@
           <h1>جهان را لمس کن، ای فرشتهٔ فرو افتاده...</h1>
           <p>جهان سازمانی به‌طور کامل پویا است. این جهان روزی آغاز شد. شاید با یک انبساط بزرگ ناگهانی مادّه؛ و ممکن است روزی پایان یابد. تمامی آنچه در کیهان وجود دارد در وجود ما نهادینه شده است! هر کدام ازما شگفتی برابر با کل کیهان داریم، ما در مقابل این جهان مسئولیم. </p>
           <div class="sidebar" id="sidebar">
-            <a href="#slider" ><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات" title="سیارات"></span></button></a>
+            <a href="#slider" target="_"><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات" title="سیارات"></span></button></a>
             <button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" alt="نیل آرمسترانگ" title="نیل آرمسترانگ"></span></button>
             <a href="#main-page2"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها" title="شهاب سنگ ها"></span></button></a>
             <a href="#aliens"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien.png" alt="فرازمینی ها" title="فرازمینی ها"></span></button></a>
@@ -121,13 +115,42 @@
             <button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png" alt="سیاره زحل" title="سیاره زحل"></span></button>
             <button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png" alt="هفت اورنگ کهین" title="هفت اورنگ کهین"></span></button>
             <a href="#footer"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما" title="ورود/تماس با ما"></span></button></a>
-            <button  class="Power-button" onclick="darkMode()"><span><img src="./image/PNG/Dark.png" alt="حالت تاریک" title="حالت تاریک"></span></button>
+            <button  class="Power-button" onclick="darkMode()"><span><img class="toggleImage" onclick="SwitchImage()" src="./image/PNG/Light.png"  alt="حالت تاریک" title="حالت تاریک"></span></button>
         </div>
-            
       </div>
       </div>
     </div>      
   </div>
+
+<script>
+            
+var ImageOne = true;
+var srcOne = "./image/PNG/Light.png";
+var srcTwo = "./image/PNG/Dark.png";
+
+
+function SwitchImage()
+{
+    if (ImageOne)
+    {
+        ImageOne = false;
+        toggleIcon(srcTwo);
+        
+    } else {
+        ImageOne = true;
+        toggleIcon(srcOne);
+        
+    }
+}
+
+
+function toggleIcon(src)
+{
+    $(".toggleImage").src= $("+src+");
+}
+
+</script>
+
 </Section>
 
 <!------------------Introduction------------------->
@@ -311,8 +334,16 @@
       .setTween(tlm)
       .addTo(controller);
 
+
+       //Dark-Mode
+   function darkMode() {
+    // var Source1 = document.getElementsByClassName('theImage');
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+   };
     </script>
     <!-------------Introduction-Scripts-End------------>
+
 
   </body>
   </html>
