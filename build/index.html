@@ -54,7 +54,7 @@
         <a href="#" class="navbar-brand d-flex align-items-center"></a>
         <a class="nav-button "><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
       </div>
-    </div> <!--navbar end-->
+    </div> 
     
     <div class="fixed-top main-menu">
       <div class="flex-center p-5">
@@ -83,7 +83,7 @@
 <Section id="welcome">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <div class="welcome text-center">
           <div class="slideshow-container">
             
@@ -107,49 +107,24 @@
           <h1>جهان را لمس کن، ای فرشتهٔ فرو افتاده...</h1>
           <p>جهان سازمانی به‌طور کامل پویا است. این جهان روزی آغاز شد. شاید با یک انبساط بزرگ ناگهانی مادّه؛ و ممکن است روزی پایان یابد. تمامی آنچه در کیهان وجود دارد در وجود ما نهادینه شده است! هر کدام ازما شگفتی برابر با کل کیهان داریم، ما در مقابل این جهان مسئولیم. </p>
           <div class="sidebar" id="sidebar">
-            <a href="#slider" target="_"><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات" title="سیارات"></span></button></a>
-            <button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" alt="نیل آرمسترانگ" title="نیل آرمسترانگ"></span></button>
-            <a href="#main-page2"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها" title="شهاب سنگ ها"></span></button></a>
-            <a href="#aliens"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien.png" alt="فرازمینی ها" title="فرازمینی ها"></span></button></a>
-            <button class="buttons"><span><img class="icon5" src="./image/PNG/spaceship.png" alt="حرکت به سمت بیکرانه ها" title="حرکت به سمت بیکرانه ها"></span></button>
-            <button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png" alt="سیاره زحل" title="سیاره زحل"></span></button>
-            <button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png" alt="هفت اورنگ کهین" title="هفت اورنگ کهین"></span></button>
-            <a href="#footer"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما" title="ورود/تماس با ما"></span></button></a>
-            <button  class="Power-button" onclick="darkMode()"><span><img class="toggleImage" onclick="SwitchImage()" src="./image/PNG/Light.png"  alt="حالت تاریک" title="حالت تاریک"></span></button>
+            <a href="#slider" data-title="سیاره ها"><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات"></span></button></a>
+            <a href="#" data-title="نیل آرمسترانگ"><button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" alt="نیل آرمسترانگ"></span></button></a>
+            <a href="#main-page2" data-title="شهاب سنگ ها"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها"></span></button></a>
+            <a href="#aliens" data-title="فرازمینی ها"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien.png" alt="فرازمینی ها"></span></button></a>
+            <a href="#" data-title="حرکت به سمت بیکرانه ها"><button class="buttons"><span><img class="icon5" src="./image/PNG/spaceship.png" alt="حرکت به سمت بیکرانه ها"></span></button></a>
+            <a href="#" data-title="سیاره زحل"><button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png" alt="سیاره زحل"></span></button></a>
+            <a href="#" data-title="هفت اورنگ کهین"><button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png" alt="هفت اورنگ کهین"></span></button></a>
+            <a href="#footer" data-title="ورود/تماس با ما"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما"></span></button></a>
+            <label>
+              <input type="checkbox" name="" onclick="darkMode()" title="حالت تاریک">
+              <span class="btn buttons"></span>
+              <i class="fa fa-power-off" ></i>
+            </label>
         </div>
       </div>
       </div>
     </div>      
   </div>
-
-<script>
-            
-var ImageOne = true;
-var srcOne = "./image/PNG/Light.png";
-var srcTwo = "./image/PNG/Dark.png";
-
-
-function SwitchImage()
-{
-    if (ImageOne)
-    {
-        ImageOne = false;
-        toggleIcon(srcTwo);
-        
-    } else {
-        ImageOne = true;
-        toggleIcon(srcOne);
-        
-    }
-}
-
-
-function toggleIcon(src)
-{
-    $(".toggleImage").src= $("+src+");
-}
-
-</script>
 
 </Section>
 
@@ -158,13 +133,13 @@ function toggleIcon(src)
 <section id="introduction">
   <div class="container">
     <div class="row">
-         <div class="col-sm-4  text-center">
+         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
               <div class="universe-img">
                   <img src="./image/Space7.png" class="image-fluid" />
               </div>
           </div>
 
-          <div class="offset-sm-2 col-sm-6 text-justify" id="universe-text">
+          <div class="offset-sm-2 col-sm-6 offset-md-2 col-md-6 offset-lg-2 col-lg-6 offset-xl-2 col-xl-6 text-justify" id="universe-text">
             <h3>جهان قابل رؤيت، سیارات</h3>
             <p>جَهان اشاره دارد به زمین و زندگی و تمدن انسانی روی آن. همچنین واژه جهان برای اشاره به کیهان و کل هستی نیز کاربرد دارد. 
 
@@ -174,14 +149,14 @@ function toggleIcon(src)
             <p>سیّارات به دور ستاره‌ها در حال گردشند. کهکشان‌ها می‌چرخند و دنباله‌دارها و سیّارک‌ها در منظومهٔ خورشیدی در حال حرکت بر روی مدار خود هستند. عناصر، اتم‌ها، مولکول‌ها و ذرّات پیوسته بر یکدیگر اثر می‌گذارند و تغییر می‌کنند. موج‌های الکترومغناطیسی همه جا هستند (ما برای دیدن آن‌ها باید بیرون از محوّطهٔ وجودیشان باشیم) ممکن است همهٔ جهان از ماده سیاه ساخته شده باشد که ما در این مورد مطمئن نیستیم. رایج‌ترین نظریّه در مورد خلق جهان تئوری مهبانگ یا انفجار بزرگ است.</p>
               </div>
 
-              <div class="col-sm-6  text-justify" id="universe-text1">
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-justify" id="universe-text1">
                 <h3>فلسفه هستی، دانش و آگاهی</h3>
                 <p>در حیطه علم و دانش، وجود اجسام از ماهیت خودشان مشتق نمی‌شود وبا خلقت و اراده خداوند تعیین می‌شود. تضاد موجود مابین بودن و ماهیت نشانگر این است که دوگانگی جهان خلقت تنها از راه خدا حل شدنی است. تجربه گرایی وجود حقایق مفردی را تشخیص می‌دهد که قابل مشاهده علوم تجربی باشند و نه مشتق از دیگری.
 
                   یکی از مهم‌ترین و اساسی‌ترین موضوعات در هستی‌شناسی، تعریف وجود است، مطالعه فلسفی از ماهیت بودن، وجود داشتن و کل واقعیت به علاوه دسته‌بندی موجودات و روابطشان. هستی‌شناسی که خود قسمتی از فلسفه علوم ماورا، طبیعت است به سوالاتی دربارهٔ این که چه موجودات و نهادهایی وجود دارند یا می‌توان گفت که هستند، می‌پردازد و اینکه چنین موجوداتی ایا قابل دسته‌بندی در یک سلسله مراتب و زیرمجموعه ان با در نظر گرفتن وجه تشابه و تمایزشان هستند یا نه.</p>
               </div>
   
-              <div class=" offset-sm-1 col-sm-5 text-center">
+              <div class=" offset-sm-1 col-sm-5 offset-md-1 col-md-5 offset-lg-1 col-lg-5 offset-xl-1 col-xl-5 text-center">
                       <div class="universe-img1">
                           <img src="./image/Space8.png" class="image-fluid" />
                       </div>
@@ -193,12 +168,12 @@ function toggleIcon(src)
 <!------------------Slides------------------->
 <section id="slider">
   <div class="container">
-    <div class="col-md-12 text-center">
+    <div class="col-md-12 col-lg-12 col-xl-12 text-center">
         <div class="slide hi-slide">
           <div class="hi-prev"></div>
           <div class="hi-next"></div>
           <ul id="ul-img"></ul>
-          <p class="hiddencontent0">gggg</p>
+          <p class="text-count0">gggg</p>
           <script>
               let hiddencontent0=['02', '021', '54654','hgjfghfh', 'uygyugt', 'fgfghf', '98787', '987'];
               let imgCollection = [];
@@ -206,11 +181,12 @@ function toggleIcon(src)
               for(let i=1; i<8; i++) {
                 imgCollection[i] = `<li><img src="./image/Slide${i}.jpg" title=${imgTitle[i]}></li>`;
                   
-                  hiddencontent0 = "hfghj";
+                  
                 
               }
               document.getElementById("ul-img").innerHTML = imgCollection;
               document.getElementsByClassName("text-count0").Text = hiddencontent0;
+              $('.text-count0').Text("hfghj");
 
                             
           </script>
@@ -224,7 +200,7 @@ function toggleIcon(src)
 <section id="planets">
   <div class ="container">
      <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="review-moon">
           <h1><i class="fa fa-moon-o" aria-hidden="true"></i></h1>
           <p>
@@ -236,7 +212,7 @@ function toggleIcon(src)
           <img src="./image/Moon-3.gif">
         </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="review-earth">
             <h1><i class="fa fa-globe" aria-hidden="true"></i></h1>
             <p>
@@ -247,7 +223,7 @@ function toggleIcon(src)
               <img src="./image/earth-1.gif">
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
             <div class="review-sun">
               <h1><i class="fa fa-sun-o" aria-hidden="true"></i></h1>
             <p>
@@ -287,7 +263,7 @@ function toggleIcon(src)
   <script src="./scripts/script.js"></script>
   
 
-
+ <!--------------------Scripts-Start--------------------->
   
   <script>
     var controller = new ScrollMagic.Controller();
@@ -342,7 +318,7 @@ function toggleIcon(src)
     element.classList.toggle("dark-mode");
    };
     </script>
-    <!-------------Introduction-Scripts-End------------>
+    <!------------------Scripts-End------------------->
 
 
   </body>

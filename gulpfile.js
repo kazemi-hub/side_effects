@@ -6,8 +6,10 @@ var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function() {
     browserSync.init({
        server: {
-          baseDir: 'build'
+          baseDir: './build'
        },
+       startPath: 'index.html'
+
     });
 });
 
@@ -32,6 +34,7 @@ gulp.task('css',function(){
 });
 
 gulp.task('default', ['browserSync','js','css'],function(){
+    gulp.watch('index.html', browserSync.reload);
     gulp.watch('src/styles/*.css', function() {
       gulp.run('css');
      });
