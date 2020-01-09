@@ -55,16 +55,6 @@ $(function() {
 
   //Planet Slide
     $(".slide").hiSlide();
-
-    
-      $('.nav-button').click(function(){
-      $('body').toggleClass('nav-open');
-      });
-      
-      $('.nav-item').click(function(){
-      $('.nav-open').toggleClass('nav-open');
-      });
-
   });
 
   

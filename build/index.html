@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-135607956-2');
-</script>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="profile" href="https://gmpg.org/xfn/11">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <title>D E A D S P A C E</title>
 
   <style>
@@ -118,7 +107,7 @@
             <label>
               <input type="checkbox" name="" onclick="darkMode()" title="حالت تاریک">
               <span class="btn buttons"></span>
-              <i class="fa fa-power-off" ></i>
+              <i class="fa fa-power-off" data-title="حالت تاریک"></i>
             </label>
         </div>
       </div>
@@ -172,73 +161,110 @@
         <div class="slide hi-slide">
           <div class="hi-prev"></div>
           <div class="hi-next"></div>
-          <ul id="ul-img"></ul>
-          <p class="text-count0">gggg</p>
-          <script>
-              let hiddencontent0=['02', '021', '54654','hgjfghfh', 'uygyugt', 'fgfghf', '98787', '987'];
-              let imgCollection = [];
+          <ul id="ul-img">
+            <li class="jupiter"><img src="./image/Slide1.jpg" alt="ژوپیتر" title="ژوپیتر"></li>
+            <li class="moon"><img src="./image/Slide2.jpg" alt="ماه" title="کره ماه"></li>
+            <li class="pluto"><img src="./image/Slide3.jpg" alt="سیارک پلوتون" title="سیارک پلوتون"></li>
+            <li class="earth"><img src="./image/Slide4.jpg" alt="سیاره زمین" title="سیاره زمین"></li>
+            <li class="venus"><img src="./image/Slide5.jpg" alt="سیاره ناهید" title="سیاره ونوس"></li>
+            <li class="mars"><img src="./image/Slide6.jpg" alt="سیاره مریخ" title="سیاره مریخ"></li>
+            <li class="sun"><img src="./image/Slide7.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
+          </ul>
+                     
+
+          <!-- <script>
+              var imgCollection = [];
               let imgTitle=['','زوپیتر', 'ماه', 'پلوتونیوم', 'زمین', 'ونوس', 'مارس','خورشید']
               for(let i=1; i<8; i++) {
                 imgCollection[i] = `<li><img src="./image/Slide${i}.jpg" title=${imgTitle[i]}></li>`;
-                  
-                  
-                
               }
               document.getElementById("ul-img").innerHTML = imgCollection;
-              document.getElementsByClassName("text-count0").Text = hiddencontent0;
-              $('.text-count0').Text("hfghj");
-
-                            
-          </script>
+          </script> -->
         </div>
     </div>
-  </div>
+  </div> 
+
 </section>
 
 
 <!------------------Planets------------------->
+
 <section id="planets">
   <div class ="container">
      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <div class="review-moon">
-          <h1><i class="fa fa-moon-o" aria-hidden="true"></i></h1>
-          <p>
-            ماه تنها قمر سیارهٔ زمین است که با بازتاباندن نور خورشید، شب‌های زمین را کمی روشن می‌کند. ماه پنجمین قمر طبیعیِ بزرگ در سامانهٔ خورشیدی در میان ۱۷۳ قمر موجود در این سامانه است. قطرِ ماه حدودِ ۳٬۵۰۰ کیلومتر است. جوّ ندارد و در پهنهٔ آن دهانه‌های برخوردی درپیِ برخوردِ سنگ‌های آسمانی پدید آمده‌است.
-
-<br><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%A7%D9%87"><span>بیشتر بدانید</span></a></p>
+          <h1 class="h-title">سیاره زمین</h1>
+          <p class="text-count0">
+            زمین سومین سیارهٔ سامانهٔ خورشیدی است که در فاصلهٔ۱۴۹٬۶۰۰٬۰۰۰کیلومتری از ستارهٔ خورشید قرار دارد. از نظر واژه‌شناسی ایرانی، زم در زبان اوستایی به معنای سرد بوده‌است که با پسوند ین، واژۀ زمین را به معنای جسم سرد به وجود آورده‌است. این سیاره چگال‌ترین  به دلیل دارا بودن منبع وسیع آهن و فلزات دیگر و از نظر بزرگی پنجمین سیاره از هشت سیارهٔ سامانهٔ خورشیدی است. همچنین در میان چهار سیارهٔ سنگی گردان به دور خورشید تیر، ناهید، زمین و مریخ  زمین بزرگترین آن‌ها است. گاهی از آن با نام‌های جهان و سیارهٔ آبی نیز یاد می‌شود. نام لاتین آن Terra است. در سامانهٔ خورشیدی، فاصلهٔ زمین تا خورشید بین فاصلهٔ زهره یا ناهید تا خورشید و فاصلهٔ مریخ یا بهرام تا خورشید است. زمین جزو سیارات داخلی سامانهٔ خورشیدی به‌شمار می‌آید. زمین ششمین جسم در سامانه خورشیدی بر پایهٔ جرم و حجم می‌باشد. نزدیک به ۴٫۵۴ میلیارد سال به صورت دقیق تر ۰٫۰۰۰۶ ± ۴٫۵۶۷۲ میلیارد سال از پیدایش زمین می‌گذرد و زندگی بر روی سطح آن در طول یک میلیارد سال پدیدار گشته‌است. هم‌اکنون زمین خانهٔ میلیون‌ها گونه از جانداران است که انسان یکی از آن‌ها است. زیست‌کرهٔ زمین با گذر زمان جو زمین و دیگر شرایط فیزیکی و شیمیایی این سیاره را دچار دگرگونی‌های شگرفی کرده‌است و محیطی را فراهم کرده‌است تا جانداران زنده بتوانند به رشد و زیست‌زایی بپردازند. همچنین در اثر این دگرگونی‌ها لایهٔ اوزون به دور این سیاره تشکیل شده‌است، لایه‌ای که با کمک میدان مغناطیسی زمین مانع از ورود پرتوهای آسیب‌رسان خورشید می‌شود و به این ترتیب اجازه می‌دهد در زمین زندگی ادامه یابد.
+          </p>
+            <br><a class="image-link" href="https://fa.wikipedia.org/wiki/%D8%B2%D9%85%DB%8C%D9%86" target="_blank">بیشتر بدانید</a>
           </div>
-          <div class="moon-image">
-          <img src="./image/Moon-3.gif">
-        </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-          <div class="review-earth">
-            <h1><i class="fa fa-globe" aria-hidden="true"></i></h1>
-            <p>
-              زمین سومین سیارهٔ سامانهٔ خورشیدی است که در فاصلهٔ۱۴۹٬۶۰۰٬۰۰۰کیلومتری از ستارهٔ خورشید قرار دارد. از نظر واژه‌شناسی ایرانی، زم یکی از فرشتگان دین زرتشت بوده‌است که با پسوند «ین» زمین را به وجود آورده‌است. زمین ششمین جسم در سامانه خورشیدی بر پایهٔ جرم و حجم می‌باشد.
-              <br><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%A7%D9%87"><span>بیشتر بدانید</span></a></p>
-            </div>
-            <div class="earth-image">
-              <img src="./image/earth-1.gif">
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-            <div class="review-sun">
-              <h1><i class="fa fa-sun-o" aria-hidden="true"></i></h1>
-            <p>
-              خورشید (نام‌های ادبی یا قدیمی: خور، هور، مهر، روز) یکی از ستارگان کهکشان راه شیری و تنها ستارهٔ سامانهٔ خورشیدی است که در مرکز آن جای دارد. خورشید یک کُرهٔ کامل است که از پلاسمای داغ ساخته شده‌است و در میانهٔ آن میدان مغناطیسی برقرار است. این ستاره قطری نزدیک به ۱٬۳۹۲٬۰۰۰ کیلومتر دارد 
-            <br><a href="https://fa.wikipedia.org/wiki/%D9%85%D8%A7%D9%87"><span>بیشتر بدانید</span></a></p>
-            </div>
-            <div class="sun-image">
-            <img src="./image/sun-1.gif">
-          </div>
-          </div>
+        
+          <img id="planet-images" src="./image/Earth.gif">
+      
         </div>
       </div>
     </section>
     
-  
+  <!---------------Gallery----------------->
+
+  <section class="project-aria">
+    <div class="container">
+      <div class="project-title pb-5">
+        <h1 class="title-h1">کیهان از نگاه هنرمندان</h1>
+        <h3 class="text-secondary">گالری اختصاصی</h3>
+      </div>
+      <div class="button-group">
+        <button type="button" class="active" id="btn-g">مجموعه کامل</button>
+        <button type="button" class="active" id="btn-g">عمومی</button>
+        <button type="button" class="active" id="btn-g">هنری</button>
+        <button type="button" class="active" id="btn-g">فلسفی</button>
+        <button type="button" class="active" id="btn-g">تخیلی</button>
+      </div>
+      <div class="row grid">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item فلسفی">
+          <div class="our-project">
+            <div class="img">
+              <img src="./image/Gallery/planets 01.jpg" alt="چشمان شیوا" title="چشمان شیوا"/>
+            </div>
+            <div class="title py-4">
+              <h4>طراحی مینیمالیسم</h4>
+              <span class="text-secondary">هنری, فلسفی</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item عمومی">
+          <div class="our-project">
+            <div class="img">
+              <img src="./image/Gallery/planets 27.jpg" alt="لمس کیهان" title="لمس کیهان"/>
+            </div>
+            <div class="title py-4">
+              <h4>گرافیک</h4>
+              <span class="text-secondary">عمومی</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item عمومی">
+          <div class="our-project">
+            <div class="img">
+              <img src="./image/Gallery/planets 14.jpg" alt="شناور در کیهان" title="شناور در کیهان"/>
+            </div>
+            <div class="title py-4">
+              <h4>مداد رنگی</h4>
+              <span class="text-secondary">تخیلی</span>
+            </div>
+          </div>
+        </div>
+
+ 
+
+      </div>
+    </div>
+  </section>
   <div class="jumbotron text-center" style="margin-bottom:0">
 
     <form class="form-inline my-2 my-lg-0">

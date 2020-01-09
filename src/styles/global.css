@@ -1,33 +1,29 @@
 /*-------------Global Styles------------*/
+[data-title] {
+    position: relative;
+}
+
 [data-title]:hover:after {
     opacity: 1;
     transition: all 0.1s ease 0.5s;
     visibility: visible;
-    /* border-radius: 5px; */
 }
+
 [data-title]:after {
     font-family: vazir;
     font-weight: bold;
     content: attr(data-title);
-    /* background-color: #fff; */
+    text-shadow: 1px 2px 4px rgb(75, 170, 177);
     color: #000;
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: absolute;
-    /* padding: 1px 5px 2px 5px; */
-    /* bottom: -1.6em; */
-    /* left: 100%; */
     white-space: nowrap;
-    /* box-shadow: 1px 1px 3px #222222; */
     opacity: 0;
-    /* border: 1px solid #111111; */
     z-index: 99999;
     visibility: hidden;
-    right: 0px;
+    right: -15px;
     top: 50px;
 
-}
-[data-title] {
-    position: relative;
 }
 
 p{
@@ -54,7 +50,33 @@ body{
 
 @media only screen and (max-width:900px){
     .hi-slide{display: none;}
+    .nav-button {
+        width: 20px !important;
+        height: 20px !important;
+        right: 10px !important;
+        top: 20px !important;
+        
+    }
 
+    .nav-button #nav-icon3 {
+        width: 10px !important;
+        height: 11px !important;
+        bottom: 15px;
+    }
+
+    .scroll img{
+        width: 40px !important;
+        background-color: transparent;
+    }
+
+    .scroll {
+        bottom: 10px !important;
+        right: -10px !important;
+        
+    }
+    .icon6{
+        display: none;
+    }
 .col-m-1{width:8.33%;}
 .col-m-2{width:16.66%;}
 .col-m-3{width:25%;}
@@ -144,7 +166,7 @@ display : block;
   }
   .scroll {
       position:absolute;
-      right:0px;
+      right: 0px;
       bottom:20px;
       background: transparent !important;
       background:transparent !important;
@@ -181,7 +203,7 @@ display : block;
 }
 
 
-/*navbar*/
+/*----------------Navbar---------------*/
 
 .main-menu {
     width: 100%;
@@ -319,7 +341,7 @@ display : block;
     padding: 12px;
     text-align: right !important;
     direction: rtl !important;
-    right: 50px !important;
+    right: 40px;
     top: 80px;
 }
 
@@ -482,8 +504,8 @@ nav .fa-bars{
 
 .welcome{
     padding: 50px 100px;
-    margin-top: -110px;
-    background: radial-gradient(circle, #14aaa5 0%, rgb(244, 244, 247) 100%);
+    margin-top: -150px;
+    background: radial-gradient(circle, rgb(0, 247, 255) 0%, rgb(244, 244, 247) 100%);
     box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
     border: 1px solid rgb(167, 243, 248);
     border-radius: 10px;
@@ -556,14 +578,8 @@ nav .fa-bars{
     border: none;
 }
 
-.Power-button span:hover {
-    padding-left: 2rem;
-    transition: 0.5s;
-}
-
 .buttons {
     border: none;
-    padding-left: 0;
     border-radius: 50%;
     background-color: transparent;
     /* padding-left: -15px; */
@@ -587,13 +603,13 @@ nav .fa-bars{
 .buttons span:after {
     position: absolute;
     top: 0;
-    right: -20px;
+    /* right: -20px; */
     transition: 0.5s;
 }
   
 .buttons:hover span:after {
     opacity: 0;
-    right: 0;
+    /* right: 0; */
 }
 
 .buttons :visited {
@@ -608,8 +624,8 @@ label{
     height: 38px;
     cursor: pointer;
     border-radius: 50%;
-    bottom: 5px;
-    left: 8px;
+    bottom: 24px;
+    left: 5px;
 }
 
 label .btn{
@@ -622,7 +638,7 @@ label .btn{
     background: #4d4c4c;
     border-radius: 50%;
     box-shadow:  0 3px 4px rgb(58, 57, 57),
-                 inset 0 -2px 5px rgb(58, 57, 57),
+                 inset 0 2px 5px rgb(58, 57, 57),
                  inset 0 2px 2px rgba(255, 255, 255, 0.5), 
                  0 0 0 2px rgb(56, 56, 56), 
                  0 0 0 5px #272727,
@@ -635,7 +651,7 @@ label input[type="checkbox"]:checked ~ .btn{
                  inset 0 1px 1px rgba(255, 255, 255, 0.1), 
                  0 0 0 2px rgb(68, 68, 68), 
                  0 0 0 5px #292828,
-                 0 0 5px 8px #00f7ff;
+                 0 0 5px 8px rgb(252, 122, 1);
 }
 
 label input[type="checkbox"]{
@@ -653,11 +669,12 @@ label .fa{
 }
 
 label input[type="checkbox"]:checked ~ .fa{
-    color: #00ffe7;
+    color: rgb(252, 122, 1);
     text-shadow:  0 0 15px #00a1ff,
                   0 0 30px #00a1ff,
 
 }
+
 /*-------------Introduction Section------------*/
 
 
@@ -809,119 +826,121 @@ label input[type="checkbox"]:checked ~ .fa{
     
 } 
 
-#planets .col-sm-4{
+#planets .col-sm-12 .col-md-12 .col-lg-12 .col-xl-12{
     padding: 100px 20px;
     direction: ltr;
 }
 
-.moon-image img{
+#planets a{
+        color: rgb(212, 104, 3);
+        text-decoration: none;
+        font-weight: lighter;
+        padding-right: 10px;
+}
+
+#planets a:hover{
+        color: rgb(245, 244, 244);
+}
+#planet-images{
     width: 150px;
     border: none;
     border-radius: 50%;
     box-shadow: 0px 0px 30px 5px  rgb(240, 237, 234);
     margin-top: -30px;
+    
 }
 
-#planets .col-sm-4 .earth-image{
-    text-align: center;
-}
-
-#planets .col-sm-4 .sun-image{
-    text-align: right;
-}
 .review-moon {
     direction: rtl;
     text-align: justify;
-    font-size: 14px;
+    font-size: 1rem;
     border-radius: 10px;
     font-family: vazir;
     padding: 10px 10px 10px 30px;
-    background-color: rgba(244, 244, 247,0.2);
+    background-color: rgba(244, 244, 247,0.1);
     box-shadow: 0px 0px 30px 5px  rgb(240, 237, 234);
 }
 
 .review-moon h1{
-   color: #fff;
-   text-shadow: 0px 0px  10px rgb(255, 255, 255);
-   font-size: 3em;
-   font-weight: lighter;
-}
-.review-earth h1{
-   color: #fff;
-   text-shadow: 0px 0px  10px rgb(1, 202, 252);
-   font-size: 3em;
-   font-weight: lighter;
-   text-align: center;
-
-}
-.review-sun h1{
-   color: #fff;
-   text-shadow: 0px 0px  10px rgb(252, 122, 1);
-   font-size: 3em;
-   font-weight: lighter;
-   text-align: left;
+   width: 20%;
+   border-radius: 10px;
+   padding: 10px 15px;
+   background:  rgb(0, 247, 255);
+   color: rgb(5, 5, 5);
+   text-shadow: 0px 0px 2px rgb(200, 246, 246);
+   font-size: 1.5em;
+   font-weight: bold;
 }
 
 .review-moon p{
+    border-radius: 15px;
+    padding: 15px;
     font-weight: lighter;
+    background:  rgba(5, 5, 5, 0.6);
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px  5px #000;
+    text-shadow: 0px 0px 2px rgb(75, 170, 177);
     text-indent: 20px;
     line-height: 24px;
 }
 
-.review-sun {
+/*-----------------Gallery-----------------*/
+
+.project-aria{
     direction: rtl;
-    text-align: justify;
-    font-size: 14px;
-    border-radius: 10px;
+    text-align: right;
     font-family: vazir;
-    padding: 10px 10px 10px 30px;
-    background-color: rgba(244, 244, 247,0.2);
-    box-shadow: 0px 0px 30px 5px  rgb(252, 122, 1);
+    padding: 50px;
 }
 
-.sun-image img{
-    width: 150px;
-    height: px;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0px 0px 50px 5px  rgb(252, 122, 1);
-    margin-top: -30px;
+.grid{
+    /* background-color: rgb(251, 251, 251); */
+    border-radius: 25px;
 }
 
-.review-sun p{
-    font-weight: lighter;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 5px #000;
-    text-indent: 20px;
-    line-height: 24px;
+.project-title{
+    direction: rtl !important;
+    text-align: right !important;
 }
 
-.review-earth {
-    margin-top: -50px;
+.button-group{
     direction: rtl;
-    text-align: justify;
-    font-size: 14px;
-    border-radius: 10px;
-    font-family: vazir;
-    padding: 10px 10px 10px 30px;
-    background-color: rgba(244, 244, 247,0.2);
-    box-shadow: 0px 0px 30px 5px rgb(1, 202, 252);
+    text-align: right;
+    padding: 15px;
 }
 
-.earth-image img{
-    width: 150px;
+#btn-g{
+    background-color: transparent;
+    direction: rtl;
+    text-align: right;
+    /* border-radius: 5px; */
+    color: #6c757d ;
+    padding: 5px;
     border: none;
-    border-radius: 50%;
-    box-shadow: 0px 0px 50px 5px rgb(1, 202, 252);
-    margin-top: -30px;
 }
 
-.review-earth p{
-    font-weight: lighter;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px  5px #000;
-    text-indent: 20px;
-    line-height: 24px;
+.our-project{
+    direction: rtl !important;
+    text-align: right;
+}
+
+img {
+    vertical-align: initial !important;
+    border-style: none;
+  }
+
+.our-project img{
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.element-item{
+    padding: 15px;
+}
+
+.فلسفی{
+    padding: 20px;
 }
