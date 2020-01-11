@@ -1,4 +1,27 @@
 /*-------------Global Styles------------*/
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --vazir: vazir;
+    --orange: rgb(212, 104, 3);
+    --lightblue: rgb(0, 247, 255);
+    --parashadow: rgb(75, 170, 177);
+}
+.active{
+    color: var(--orange) !important;
+}
+button:focus,
+button:active
+button:hover
+.btn:active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
 [data-title] {
     position: relative;
 }
@@ -29,18 +52,13 @@
 p{
     color: #666;
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 html {
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: #ffffff !important;
+    background-color: #fff;
     color: black;
 }
 
@@ -77,6 +95,24 @@ body{
     .icon6{
         display: none;
     }
+
+    #stable h2{
+        min-width: 100%;
+     }
+     .review-moon h1{
+        min-width: 100%;
+     }
+
+     .image-rotate img{
+        width: 270px;
+        margin-top: -270px;
+        margin-left: 130px;
+    }
+
+    .image-fix{
+        width: 270px;
+    }
+
 .col-m-1{width:8.33%;}
 .col-m-2{width:16.66%;}
 .col-m-3{width:25%;}
@@ -93,6 +129,11 @@ body{
 }
 
 @media only screen and (min-width:768px){
+
+    #comets h1{
+        display: none;
+    }
+    
     
 .col-1{width:8.33%;}
 .col-2{width:16.66%;}
@@ -138,7 +179,7 @@ display : block;
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(212, 104, 3); 
+    background: var(--orange) ; 
     border-radius: 10px;
     box-shadow: inset 0 0 5px #111;
   }
@@ -221,7 +262,7 @@ display : block;
 
 .main-menu .nav li a {
     
-    color: rgb(212, 104, 3);
+    color: var(--orange) ;
     font-size: 1.4em;
     font-weight: 400;
     direction: rtl !important;
@@ -334,7 +375,7 @@ display : block;
     /* font-weight: 600; */
     position: fixed;
     z-index: 1111;
-    border: solid 1px rgb(212, 104, 3);
+    border: solid 1px var(--orange) ;
     height: 42px;
     display: block;
     width: 50px;
@@ -368,7 +409,7 @@ display : block;
     position: absolute;
     height: 3px;
     width: 100%;
-    background: rgb(212, 104, 3);
+    background: var(--orange) ;
     border-radius: 9px;
     opacity: 1;
     right: 0;
@@ -579,7 +620,7 @@ nav .fa-bars{
 }
 
 .buttons {
-    border: none;
+    border: none !important;
     border-radius: 50%;
     background-color: transparent;
     /* padding-left: -15px; */
@@ -624,7 +665,7 @@ label{
     height: 38px;
     cursor: pointer;
     border-radius: 50%;
-    bottom: 24px;
+    bottom: 4px;
     left: 5px;
 }
 
@@ -815,10 +856,9 @@ label input[type="checkbox"]:checked ~ .fa{
 /*-------------Planets-Section------------*/
 
 #planets{
-    /* display: none; */
     padding-top: 50px;
     padding-bottom: 50px;
-    background: radial-gradient(circle, rgba(0,0,0,0.8) 10%,rgba(0,0,0,0.8) 100%),url(../image/space15.jpg);
+    background: radial-gradient(circle, rgba(0,0,0,0.5) 10%,rgba(0,0,0,0.8) 100%),url(../image/space15.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -832,7 +872,7 @@ label input[type="checkbox"]:checked ~ .fa{
 }
 
 #planets a{
-        color: rgb(212, 104, 3);
+        color: var(--orange) ;
         text-decoration: none;
         font-weight: lighter;
         padding-right: 10px;
@@ -865,7 +905,7 @@ label input[type="checkbox"]:checked ~ .fa{
    width: 20%;
    border-radius: 10px;
    padding: 10px 15px;
-   background:  rgb(0, 247, 255);
+   background:  rgb(0, 247, 255) ;
    color: rgb(5, 5, 5);
    text-shadow: 0px 0px 2px rgb(200, 246, 246);
    font-size: 1.5em;
@@ -889,7 +929,8 @@ label input[type="checkbox"]:checked ~ .fa{
     direction: rtl;
     text-align: right;
     font-family: vazir;
-    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .grid{
@@ -905,17 +946,22 @@ label input[type="checkbox"]:checked ~ .fa{
 .button-group{
     direction: rtl;
     text-align: right;
-    padding: 15px;
+    padding-bottom: 15px;
 }
 
-#btn-g{
-    background-color: transparent;
-    direction: rtl;
-    text-align: right;
-    /* border-radius: 5px; */
-    color: #6c757d ;
-    padding: 5px;
+.project-aria .button-group button{
+    background: transparent;
     border: none;
+    font-family: vazir;
+    /* color: #6c757d */
+}
+
+.project-aria .button-group button + button{
+    padding-right: 1.5rem;
+}
+
+.title h4{
+    font: normal 700 25px/12px var(--vazir);
 }
 
 .our-project{
@@ -923,24 +969,158 @@ label input[type="checkbox"]:checked ~ .fa{
     text-align: right;
 }
 
-img {
-    vertical-align: initial !important;
-    border-style: none;
-  }
 
 .our-project img{
-    width: 300px;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    border-radius: 5px;
+    border-radius: 10 px;
     padding: 0px;
+}
+
+.our-project img:hover{
+   filter: brightness(1.1) drop-shadow(1px 8px 30px var(--orange) );
 }
 
 .element-item{
     padding: 15px;
 }
 
-.فلسفی{
-    padding: 20px;
+/*-------------------Section-Comets------------------*/
+
+#comets{
+    direction: rtl;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: radial-gradient(circle, rgba(0,0,0,0.4) 10%,rgba(0,0,0,0.4) 100%),url(../image/space14.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#stable{
+    /* position: absolute; */
+    direction: rtl;
+    text-align: justify;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-family: vazir;
+    padding: 10px 10px 10px 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 30px 5px  rgb(240, 237, 234);
+}
+
+.circle{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle1{
+    width:300px;
+    background-position: center;
+    background-size: cover;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle() ;
+    border: 2px solid var(--lightblue);
+}
+
+.circle2{
+    width:300px;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle() ;
+    border: 2px solid var(--lightblue);
+}
+
+#comets h2{
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background: var(--lightblue);
+    color: rgb(5, 5, 5);
+    text-shadow: 0px 0px 2px rgb(200, 246, 246);
+    font-size: 1.5em;
+    font-weight: bold;
+ }
+
+ #comets h1{
+    color: black; background-color: var(--lightblue); font-family: vazir; font-size: 1.4em; padding: 10px;
+    max-width: 500px;
+    margin-right: 20px;
+    border-radius: 10px;
+ }
+ 
+#stable p{
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: lighter;
+    background:  rgba(5, 5, 5, 0.6);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px var(--parashadow);
+    text-indent: 20px;
+    line-height: 24px;
+}
+
+/*-----------------Music-Section----------------*/
+
+#music{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.image-rotate{
+    width: 395px;
+    z-index: 0;
+    
+}
+
+.image-rotate img{
+    width: 375px;
+    position: absolute;
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    -webkit-animation: rotation 5s linear infinite;
+    -moz-animation: rotation 5s linear infinite;
+    -ms-animation: rotation 5s linear infinite;
+    margin-top: -376px;
+    margin-left: 185px;
+}
+
+.image-fix{
+    position: relative;
+    width: 380px;
+    z-index: 50;
+   
+}
+
+.image-fix img{
+    width: 100%;
+    border: 2px solid var(--lightblue);
+    border-radius: 15px;
+}
+
+@-webkit-keyframes rotation {
+    0%   { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); };
+}
+@-moz-keyframes rotation {
+    0%   { -moz-transform: rotate(0deg); }
+    100% { -moz-transform: rotate(360deg); };
+}
+@-ms-keyframes rotation {
+    0%   { -ms-transform: rotate(0deg); }
+    100% { -ms-transform: rotate(360deg); };
 }

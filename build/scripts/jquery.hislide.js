@@ -183,3 +183,4 @@ sun.click(function () {
     $('.nav-item').click(function(){
     $('.nav-open').toggleClass('nav-open');
     });
+    
