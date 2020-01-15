@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>D E A D S P A C E</title>
   <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+  <link href="//db.onlinewebfonts.com/c/70417c6f822b3450d25636b49932ef69?family=Chaos+and+Pain" rel="stylesheet" type="text/css"/>
 
   <style>
     @import url(./styles/bootstrap.css);
     @import url(./styles/font-awesome/css/font-awesome.min.css);
     @import url(./styles/styles.css);
     @import url(./styles/Fonts.css);
+    @import url(//db.onlinewebfonts.com/c/70417c6f822b3450d25636b49932ef69?family=Chaos+and+Pain);
     
     
         @font-face {
@@ -23,6 +25,8 @@
             src: url(./Fonts/vazir-font-master/dist/Vazir.woff2);
             src: url(./Fonts/vazir-font-master/dist/Vazir-bold.woff2);
       }
+
+      @font-face {font-family: "Chaos and Pain"; src: url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.eot"); src: url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.woff") format("woff"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.svg#Chaos and Pain") format("svg"); }
 
 
     </style>
@@ -39,6 +43,9 @@
 
 
   <div id="header" class="head-main">
+    <div class="play-me">
+      <button class="play" onclick="playpause()"><i class="fa fa-play" aria-hidden="true"></i><i class="fa fa-pause" aria-hidden="true"></i></button>
+    </div>
 
     <div class="navbar box-shadow">
       <div class="d-flex justify-content-between">
@@ -50,15 +57,27 @@
     <div class="fixed-top main-menu">
       <div class="flex-center p-5">
         <ul class="nav flex-column">
-          <li class="nav-item delay-1"><a class="nav-link"  href="index.html">خانه</a></li>
-          <li class="nav-item delay-2"><a class="nav-link" href="#">انجمن</a></li>
-          <li class="nav-item delay-3"><a class="nav-link" href="#"> متافیزیک و پیدایش جهان</a></li>
-          <li class="nav-item delay-4"><a class="nav-link" href="#">پیدایش ستارگان</a></li>
-          <li class="nav-item delay-5"><a class="nav-link" href="#">شکل گیری زمین</a></li>
-          <li class="nav-item delay-6"><a class="nav-link" href="#">کائنات و انرژی تاریک</a></li>
-          <li class="nav-item delay-7"><a class="nav-link" href="#">درباره ما</a></li>
-          <li class="nav-item delay-8"><a class="nav-link" href="#">تماس با ما</a></li>
+          <li class="nav-item delay-1"><a class="nav-link"  href="index.html"><i class="fa fa-home" aria-hidden="true"></i> خانه</a></li>
+          <li class="nav-item delay-2"><a class="nav-link" href="#"><i class="fa fa-users" aria-hidden="true"></i> انجمن</a></li>
+          <li class="nav-item delay-3"><a class="nav-link" href="#"> <i class="fa fa-first-order" aria-hidden="true"></i> متافیزیک و پیدایش جهان</a></li>
+          <li class="nav-item delay-4"><a class="nav-link" href="#"><i class="fa fa-certificate" aria-hidden="true"></i> پیدایش ستارگان</a></li>
+          <li class="nav-item delay-5"><a class="nav-link" href="#"><i class="fa fa-globe" aria-hidden="true"></i> شکل گیری زمین</a></li>
+          <li class="nav-item delay-6"><a class="nav-link" href="#"><i class="fa fa-adjust" aria-hidden="true"></i> کائنات و انرژی تاریک</a></li>
+          <li class="nav-item delay-7"><a class="nav-link" href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i> درباره ما</a></li>
+          <li class="nav-item delay-8"><a class="nav-link" href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> تماس با ما</a></li>
         </ul>
+        <div class="line"></div>
+        <div class="vertical-text">
+        <h1>d</h1>
+        <h1>e</h1>
+        <h1>a</h1>
+        <h1>d</h1>
+        <h1>s</h1>
+        <h1>p</h1>
+        <h1>a</h1>
+        <h1>c</h1>
+        <h1>e</h1>
+      </div>
       </div>
     </div>
 
@@ -99,15 +118,15 @@
           <p>جهان سازمانی به‌طور کامل پویا است. این جهان روزی آغاز شد. شاید با یک انبساط بزرگ ناگهانی مادّه؛ و ممکن است روزی پایان یابد. تمامی آنچه در کیهان وجود دارد در وجود ما نهادینه شده است! هر کدام ازما شگفتی برابر با کل کیهان داریم، ما در مقابل این جهان مسئولیم. </p>
           <div class="sidebar" id="sidebar">
             <a href="#slider" data-title="سیاره ها"><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات"></span></button></a>
-            <a href="#" data-title="نیل آرمسترانگ"><button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" alt="نیل آرمسترانگ"></span></button></a>
-            <a href="#main-page2" data-title="شهاب سنگ ها"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها"></span></button></a>
-            <a href="#aliens" data-title="فرازمینی ها"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien.png" alt="فرازمینی ها"></span></button></a>
+            <a href="#گالری" data-title="گالری"><button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" alt="گالری"></span></button></a>
+            <a href="#comets" data-title="شهاب سنگ ها"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها"></span></button></a>
+            <a href="#music-center" data-title="موسیقی کیهانی"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien.png" alt="موسیقی کیهانی"></span></button></a>
             <a href="#" data-title="حرکت به سمت بیکرانه ها"><button class="buttons"><span><img class="icon5" src="./image/PNG/spaceship.png" alt="حرکت به سمت بیکرانه ها"></span></button></a>
             <a href="#" data-title="سیاره زحل"><button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png" alt="سیاره زحل"></span></button></a>
             <a href="#" data-title="هفت اورنگ کهین"><button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png" alt="هفت اورنگ کهین"></span></button></a>
             <a href="#footer" data-title="ورود/تماس با ما"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما"></span></button></a>
             <label>
-              <input type="checkbox" name="" onclick="darkMode()" title="حالت تاریک">
+              <input type="checkbox" name="" id="darkSwitch" title="حالت تاریک">
               <span class="btn buttons"></span>
               <i class="fa fa-power-off" data-title="حالت تاریک"></i>
             </label>
@@ -156,7 +175,7 @@
 </div>
 </section>
 
-<!------------------Slides------------------->
+<!------------------Slides- Planets------------------>
 <section id="planets">
 <div id="slider">
   <div class="container">
@@ -202,17 +221,10 @@
 </div>
 </div>
 </section>
-
-<!------------------Planets------------------->
-
-
-
    
-
-    
   <!---------------Gallery----------------->
 
-  <section class="project-aria">
+  <section class="project-aria" id="گالری">
     <div class="container">
       <div class="project-title pb-5">
         <h1 class="title-h1">کیهان از نگاه هنرمندان</h1>
@@ -380,6 +392,30 @@
       </div>
     </div>
   </section>
+
+<!-------------------Music--------------------->
+
+<div class="container" id="music-center">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="cosmic">
+        <h1 id="کیهان">موسیقی کیهانی</h1>
+        
+        <span id="extened">
+          موسیقی کیهانی اشاره دارد به نوای عارفانه ای از نت های هستی، تمامی آنچه که در پیرامون ما در جریان و حتی در گذار از کالبد موجودات زنده و مرده کیهان است، در بیان متافیزیک و اولترا فیزیک پیوند های مابین ریسمان های هستی از جهان قابل روئیت تا ماده و انرژی سیاه با ریسمان هایی به یکدیگر متصل اند که تشکیل یک هارمونی داده و اگر آنها را در غالب یک سناریو و چیدمانی از نت ها تصور کنیم به یک موسیقی کیهانی دست خواهیم یافت</span>
+        <span><a id="show" href="#extened">... <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></span>
+        <p id="hide-text"></br>
+          براساس نظریه ریسمان ها، اگر یک ابر میکروسکوپ داشته باشیم و بتوانیم به دقت به قلب یک الکترون بنگریم، یک ذره نقطه ای، بلکه ریسمانی مرتعش را مشاهده خواهیم کرد. ( این ریسمان بسیار کوچک است، به اندازه طول پلانک برابر با ۳۳- ^۱۰ سانتی متر، میلیاردها بار کوچکتر از یک پروتون، بنابراین توان ذرات زیراتمی بصورت نقطه ای دیده می شوند. ) اگر بخواهیم این ریسمان را به ارتعاش در آوریم، صدای تغییر خواهد کرد؛ مثلا الکترون ممکن است به یک نوترینو تبدیل شود. و اگر دوباره آن را به ارتعاش در آوریم، ممکن است به یک کوارک تبدیل می شود. در حقیقت اگر ریسمان را با شدت های مختلف به لرزه در آوریم، می توانیم آن را به هر کدام از ذرات زیر اتمی شناخته شده تبدیل کینم. به این ترتیب نظریه ریسمان ها می تواند به راحتی این موضوع را توضیح دهد که چرا تعداد ذرات زیر اتمی تا به این حد زیاد است.
+
+آنها چیزی نیستند جز نت های متفاوتی که می توان بر روی ابر ریسمان نواخت. در حقیقت تمام زیر ذرات موجود در جهان را می توان بصورت ارتعاشات یک ریسمان نشان داد که « هارمونی » های ریسمان همان قوانین فیزیک هستند.
+<a  id="hide" href="#کیهان"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 <section id="music">
   <div class="container">
     <div class="row">
@@ -390,11 +426,33 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora maiores accusamus veniam mollitia quibusdam porro fugit. Nam neque officiis, architecto consectetur reprehenderit necessitatibus, harum beatae voluptates eius illo voluptatem illum.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni sequi itaque rerum voluptas dolore vel in, quidem esse temporibus enim eligendi? Omnis in nihil quo impedit. Blanditiis laudantium minus natus.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam atque ipsum repudiandae eum fugiat alias rem labore dolore eius animi excepturi nostrum inventore, molestias iste in voluptatibus sint nisi quisquam?
-        </p>
+        <div class="music-player">
+          
+          <div class="glow">
+            <div class="text-music">
+              <span class="text">Nebula Orionis </span>
+              <br>
+              <span class="text">Starthrone</span>
+              <br>
+              <div class="playback_controls">
+                <button class="btn-control" onclick="skip('back')"><i class="fa fa-fast-backward"></i></button>
+                <button class="btn-control" onclick="playpause()"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
+                <button class="btn-control" onclick="stop()"><i class="fa fa-stop"></i></button>
+                <button class="btn-control" onclick="skip('fwd')"><i class="fa fa-fast-forward"></i></button>
+              </div>
+              <br>
+              <div id="seekbar">
+                <input type="range" oninput="setPos(this.value)" id="seek" value="0" max="">
+              </div>
+              <br>
+              <div class="volume_controls">
+                <button  class="btn-control" id="mute" onclick="mute()"><i class="fa fa-volume-up"></i></button>
+                <input type="range" id="volume" oninput="setVolume(this.value)" min="0" max="1" step="0.01" value="1">
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -402,10 +460,10 @@
 
 
   <div class="jumbotron text-center" style="margin-bottom:0">
-
+    
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button><i class="fa fa-refresh" aria-hidden="true">
     </form>
 
     <p>Footer</p>
@@ -424,6 +482,7 @@
   <script src="./scripts/CSSPlugin.min.js"></script>
   <script src="./scripts/isotope.min.js"></script>
   <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+  <script src="./scripts/dark-mode-switch.js"></script>
   <script src="./scripts/customfilter.js"></script>
   <script src="./scripts/script.js"></script>
   
@@ -476,18 +535,80 @@
       .addTo(controller);
 
 
-       //Dark-Mode
-   function darkMode() {
-    // var Source1 = document.getElementsByClassName('theImage');
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-   };
+    //Dark-Mode
+  //  function darkMode() {
+  //   var element = document.body;
+  //   element.classList.toggle("dark-mode");
+  //  };
 
- 
-    </script>
+   
+   //Music-player
+   var song = new Audio;
+   var muted = false;
+   var vol = 1;
+   song.type = 'audio/mpeg';
+   song.src = '../music/Exile  - Nebula Orionis_5.mp3';
+   
+   function skip(time) {
+     if (time == 'back') {
+       song.currentTime = (song.currentTime - 5);
+     } else if (time == 'fwd') {
+       song.currentTime = (song.currentTime + 5);
+     }
+   }
+   function playpause() {
+     if (!song.paused) {
+       song.pause();
+     } else {
+       song.play();
+     }
+   }
+   function stop() {
+     song.pause();
+     song.currentTime = 0;
+     document.getElementById('seek').value = 0;
+   }
+   function setPos(pos) {
+     song.currentTime = pos;
+   }
+   function mute() {
+     if (muted) {
+       song.volume = vol;
+       muted = false;
+       document.getElementById('mute').innerHTML = '<i class="fa fa-volume-up"></i>';
+     } else {
+       song.volume = 0;
+       muted = true;
+       document.getElementById('mute').innerHTML = '<i class="fa fa-volume-off"></i>';
+     }
+   }
+   function setVolume(volume) {
+     song.volume = volume;
+     vol = volume;
+   }
+   song.addEventListener('timeupdate',function() {
+     curtime = parseInt(song.currentTime,10);
+     document.getElementById('seek').max = song.duration;
+     document.getElementById('seek').value = curtime;
+    })
+   
+    $('#hide-text').hide();
+    $('#show').click(function () {
+      $('#hide-text').show(500);
+    $('#show').hide(1000);
+    })
+      
+    $('#hide').click(function () {
+      $('#hide-text').hide(500);
+    $('#show').show();
+    })
+
+
+
+   </script>
     <!------------------Scripts-End------------------->
-
-
+    
+    
   </body>
   </html>
   

@@ -16,4 +16,6 @@ $(function () {
       type:'image',
       gallery:{enabled:true}
     })
+
+
 });
