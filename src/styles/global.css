@@ -66,6 +66,7 @@ body{
     background-color: #fff;
     color: black;
     text-align: center;
+    transition: all 0 !important;
 }
 
 [class*="col-"]{
@@ -73,13 +74,15 @@ body{
 }
 
 @media only screen and (max-width:976px){
-    .hi-slide{display: none;}
+    .hi-slide{
+        display: none;
+    }
+
     .nav-button {
         width: 20px !important;
         height: 20px !important;
         right: 10px !important;
         top: 40px !important;
-        
     }
 
     .nav-button #nav-icon3 {
@@ -158,7 +161,27 @@ body{
     #universe-text {
         margin-top: 0px !important;
     }
+    .sidebar img {
+        width: 30px !important;
+        height: 30px !important;   
+    }
 
+    label{
+        /* bottom: -15px !important; */
+        z-index: 500 !important; 
+    }
+
+    #header{
+        min-height: 100vh !important;
+    }
+
+    .welcome p{
+    font-size: 0.8em !important;
+    }
+    
+    .welcome h1{
+        font-size: 1.1em !important;
+    }
 .col-m-1{width:8.33%;}
 .col-m-2{width:16.66%;}
 .col-m-3{width:25%;}
@@ -202,7 +225,6 @@ display : block;
   [data-theme="dark"] {
     background-color: #111 !important;
     color: #eee;
-    transition: all 2s;
   }
 
   [data-theme="dark"] .welcome{
@@ -259,8 +281,9 @@ display : block;
   [data-theme="dark"] #introduction{
     background-image: url(../image/smoke2.png);
     background-repeat: no-repeat;
-    margin-top: -50px;
+    margin-top: -150px;
     padding-top: 150px;
+    overflow: hidden;
   }
 
   [data-theme="dark"] #introduction p{
@@ -726,7 +749,7 @@ nav .fa-bars{
     transition: ease-in-out;
 }
 
-/*-------------Welcome Section------------*/
+/*-------------Welcome-Section------------*/
 
 .welcome{
     padding: 50px 100px;
@@ -1193,6 +1216,7 @@ label input[type="checkbox"]:checked ~ .fa{
     background-attachment: fixed;
 }
 #stable{
+    margin-bottom: 40px;
     direction: rtl;
     text-align: justify;
     font-size: 1rem;
@@ -1423,6 +1447,8 @@ label input[type="checkbox"]:checked ~ .fa{
 	        filter: blur(20px);
 }
 .text-music {
+    font-family: var(--vazir);
+    font-weight: lighter;
     font-size: 0.9em;
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
@@ -1565,7 +1591,7 @@ input::-webkit-slider-thumb {
 
 .about-artists p{
     font-size: 0.91em;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     direction: rtl;
     text-align: justify;
     color: #000;
@@ -1609,4 +1635,6 @@ input::-webkit-slider-thumb {
 
 .form-inline{
     direction: rtl;
+    text-align: center;
 }
+
