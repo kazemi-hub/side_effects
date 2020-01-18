@@ -41,8 +41,8 @@ button:hover
     font-family: vazir;
     font-weight: bold;
     content: attr(data-title);
-    text-shadow: 1px 2px 4px rgb(75, 170, 177);
-    color: #000;
+    /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
+    color:var(--globaltext);
     font-size: 1rem;
     position: absolute;
     white-space: nowrap;
@@ -202,31 +202,36 @@ display : block;
   [data-theme="dark"] {
     background-color: #111 !important;
     color: #eee;
-    transition: all 2s
+    transition: all 2s;
   }
 
   [data-theme="dark"] .welcome{
-    background: radial-gradient(circle, rgb(255, 255, 255) 20%, #111 100%);
+      margin-top: -110px;
+    background: radial-gradient(circle, transparent 50%, #111 100%);
     box-shadow: 0 0 20px 7px #111;
     border: 1px solid #111;
+    border-radius: 50%;
 }
   [data-theme="dark"] .welcome p{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 2px 4px rgb(0, 0, 0);
     transition: all 2s;
     font-weight: bolder;
 }
-}
+
   [data-theme="dark"] .welcome h1{
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-shadow: 1px 2px 4px rgb(168, 154, 145);
     transition: all 2s;
 }
   
+  [data-theme="dark"] .mySlides{
+      opacity: 1;
+  }
+
   [data-theme="dark"] #header{
     background-image: url(../image/header-4.jpg);
     transition: all 2s;
-   
 }
 
   [data-theme="dark"] .slideshow-container img {
@@ -243,8 +248,54 @@ display : block;
 }
 
   [data-theme="dark"] .sidebar img {
-    border: 1px solid #000;
+    border: 2px solid var(--globaltext);    
 }
+
+  [data-theme="dark"] .about-artists {
+    background:url(../image/smoke1.png);
+   
+}
+
+  [data-theme="dark"] #introduction{
+    background-image: url(../image/smoke2.png);
+    background-repeat: no-repeat;
+    margin-top: -50px;
+    padding-top: 150px;
+  }
+
+  [data-theme="dark"] #introduction p{
+    color: rgb(204, 204, 204);
+  }
+
+  [data-theme="dark"] #introduction h3{
+    color: var(--orange);
+  }
+
+  [data-theme="dark"] .client{
+    margin: 15px;
+    direction: rtl;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #fff;
+  }
+
+  [data-theme="dark"] .about-artists p{
+    font-size: 0.91em;
+    padding-top: 10px;
+    direction: rtl;
+    text-align: justify;
+    color: var(--globaltext);
+  } 
+
+  /* [data-theme="dark"] .band-links i{
+    color: #fff ;
+} */
+
+  [data-theme="dark"] .band-links{
+    background: rgba(0, 247, 255, 0.9);
+    
+   }
 
   [data-theme="dark"] .bg-light {
     background-color: #333 !important;
@@ -680,7 +731,7 @@ nav .fa-bars{
 .welcome{
     padding: 50px 100px;
     margin-top: -150px;
-    background: radial-gradient(circle, rgb(0, 247, 255) 20%, rgb(244, 247, 247) 100%);
+    background: radial-gradient(circle, rgb(0, 247, 255) 0%, rgb(244, 247, 247) 80%);
     box-shadow: 0 0 20px 7px rgba(255, 255, 255, 0.8);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
@@ -801,7 +852,7 @@ label{
     height: 38px;
     cursor: pointer;
     border-radius: 50%;
-    bottom: 4px;
+    bottom: 5px;
     left: 5px;
 }
 
@@ -857,13 +908,13 @@ label input[type="checkbox"]:checked ~ .fa{
 
 
 #introduction{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     font-family: vazir;
 }
 
 #introduction img{
-    padding-top: 10px;
+    padding-top: 100px;
     border: none;
     border-radius: 10px;
     background-size: cover;
@@ -871,12 +922,15 @@ label input[type="checkbox"]:checked ~ .fa{
 }
 
 #introduction .col-sm-6{
+    /* padding-top: 200px; */
     padding: 20px 10px;
     text-align: right;
     direction: rtl;
 }
 
 #introduction h3{
+    color: var(--orange);
+    padding-top: 100px;
     margin: 20px auto;
     font-weight: bold;
     font-size: 1.5em;
@@ -907,7 +961,7 @@ label input[type="checkbox"]:checked ~ .fa{
 
 #universe-text1 {
     text-indent: 25px;
-    margin-top: 50px;
+    margin-top: 40px;
     transition: all 1s ease-out;
     
 }
@@ -992,7 +1046,7 @@ label input[type="checkbox"]:checked ~ .fa{
 /*-------------Planets-Section------------*/
 
 #planets{
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
     background: radial-gradient(circle, rgba(0,0,0,0.5) 10%,rgba(0,0,0,0.8) 100%),url(../image/space15.jpg);
     background-position: center;
@@ -1071,6 +1125,7 @@ label input[type="checkbox"]:checked ~ .fa{
     background-position: center;
     /* background-size: cover; */
     background-image: url(../image/smoke.png);
+    background-repeat: no-repeat;
 }
 
 .grid{
@@ -1250,8 +1305,6 @@ label input[type="checkbox"]:checked ~ .fa{
 #music{
     padding-top: 40px;
     padding-bottom: 100px;
-    /* background: url(../image/smoke4.png);
-    background-attachment: fixed; */
     
 }
 .image-rotate{
@@ -1297,8 +1350,6 @@ label input[type="checkbox"]:checked ~ .fa{
     0%   { -ms-transform: rotate(0deg); }
     100% { -ms-transform: rotate(360deg); };
 }
-
-/*-----------------Music-Section------------------*/
 
 .music-player {
 	display: -webkit-box;
@@ -1477,4 +1528,85 @@ input::-webkit-slider-thumb {
 	100% {
 		background-position: 0 0;
 	}
+}
+
+.about-artists {
+    padding-top: 0;
+    background:url(../image/smoke.png);
+    font-family: var(--vazir);
+    padding-bottom: 50px;
+    
+}
+
+.about-artists h1{
+    padding-top: 10px;
+}
+
+.about-artists h4{
+    padding-top: 10px;
+}
+
+.client a{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.client a:hover{
+   cursor: pointer;
+}
+
+.about-artists h5{
+    padding-top: 40px;
+    direction: rtl;
+    text-align: justify;
+    color: var(--globaltext);
+    font-size: 1.1em;
+}
+
+.about-artists p{
+    font-size: 0.91em;
+    padding-top: 10px;
+    direction: rtl;
+    text-align: justify;
+    color: #000;
+}
+
+.about-artists img{
+    border: 1px solid var(--lightblue);
+    border-radius: 5%;
+}
+
+
+.client{
+    margin: 15px;
+    direction: rtl;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #000;
+}
+ 
+.band-links{
+ background: rgba(255, 125, 4, 0.8);
+ border-radius: 15px;
+ cursor: pointer;
+ margin-bottom: 50px;
+}
+
+.band-links i{
+    font-size: 48px;
+    padding: 5px;
+    color: #000 ;
+} 
+
+.band-links i:hover{
+    font-size: 48px;
+    padding: 5px;
+    color: #fff;
+}
+
+/*--------------------------------------*/
+
+.form-inline{
+    direction: rtl;
 }
