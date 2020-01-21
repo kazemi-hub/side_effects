@@ -5,32 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>D E A D S P A C E</title>
-  <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
-  <link rel="stylesheet" href="./styles/owl.carousel.css">
-  <link rel="stylesheet" href="./styles/owl.theme.default.css">
-  <link rel="stylesheet" href="./Fonts/fontawesome-5.12.0/css/all.css">
-  <link href="//db.onlinewebfonts.com/c/70417c6f822b3450d25636b49932ef69?family=Chaos+and+Pain" rel="stylesheet" type="text/css"/>
+
   
   <style>
+    @import url(./vendor/Magnific-Popup/dist/magnific-popup.css);
+    @import url(./styles/owl.carousel.css);
+    @import url(./styles/owl.theme.default.css);
+    @import url(./Fonts/fontawesome-5.12.0/css/all.css);
     @import url(./styles/bootstrap.css);
     @import url(./styles/font-awesome/css/font-awesome.min.css);
     @import url(./styles/styles.css);
     @import url(./styles/Fonts.css);
-    @import url(//db.onlinewebfonts.com/c/70417c6f822b3450d25636b49932ef69?family=Chaos+and+Pain);
     
     
-        @font-face {
-            font-family: vazir;
-            src: url(./Fonts/vazir-font-master/dist/Vazir.ttf);
-            src: url(./Fonts/vazir-font-master/dist/Vazir.woff);
-            src: url(./Fonts/vazir-font-master/dist/Vazir-bold.woff);
-            src: url(./Fonts/vazir-font-master/dist/Vazir-bold.ttf);
-            src: url(./Fonts/vazir-font-master/dist/Vazir.woff2);
-            src: url(./Fonts/vazir-font-master/dist/Vazir-bold.woff2);
+    @font-face {
+      font-family: vazir;
+        src: url(./Fonts/vazir-font-master/dist/Vazir.ttf),
+        url(./Fonts/vazir-font-master/dist/Vazir.woff),
+        url(./Fonts/vazir-font-master/dist/Vazir-bold.woff),
+        url(./Fonts/vazir-font-master/dist/Vazir-bold.ttf),
+        url(./Fonts/vazir-font-master/dist/Vazir.woff2),
+        url(./Fonts/vazir-font-master/dist/Vazir-bold.woff2);
+    }
+
+    @font-face {
+      font-family: Chaos and Pain;
+        src: url(./Fonts/ChaosandPain/chaosandpain.eot);
+        src: url(./Fonts/ChaosandPain/chaosandpainIE8.eot) format("embedded-opentype"), /* IE6-IE8 */
+        url(./Fonts/ChaosandPain/ChaosandPain.woff2) format("woff2"), /* chrome firefox */
+        url(./Fonts/ChaosandPain/ChaosandPain.woff) format("woff"), /* chrome firefox */
+        url(./Fonts/ChaosandPain/ChaosandPain.ttf) format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+        url(./Fonts/ChaosandPain/chaosandPain.svg) format("svg"); /* iOS 4.1- */
       }
-
-      @font-face {font-family: "Chaos and Pain"; src: url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.eot"); src: url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.woff") format("woff"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/70417c6f822b3450d25636b49932ef69.svg#Chaos and Pain") format("svg"); }
-
 
     </style>
   </head>
@@ -44,13 +50,74 @@
   <!----------------------Header------------------------>
 
 
+  <div class="hamburger-menu-output">
+    <div class="menu-nav-menu-container">
+      <ul id="menu-nav-menu" class="hamburger-navigation">
+        <p class="lustre">deadspace</p>
+        <li><a target="" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> خانه</a>
+          <ul class='dropdown'>
+            <li><a target="" href="index.html"><i class="fa fa-first-order" aria-hidden="true"></i> متافیزیک و پیدایش جهان</a></li>
+            <li><a target="" href="#"><i class="fa fa-certificate" aria-hidden="true"></i> پیدایش ستارگان</a></li>
+            <li><a target="frame name" href="#footer"><i class="fas fa-meteor"></i> شهاب سنگ ها</a></li>
+          </ul>
+        </li>
+        
+        <li><a target="" href="#"><i class="fa fa-users" aria-hidden="true"></i> انجمن</a>
+           <ul class='dropdown'>
+              <li><a target="" href="#"><i class="fas fa-sign-in-alt"></i> ثبت نام/ورود</a></li>
+              <li><a target="" href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> تماس با ما</a></li>
+              <li><a target="" href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i> درباره ما</a></li>
+          </ul>
+        </li>
+        <li><a target="" class=".nav-item" href="#planets"><i class="fas fa-globe-europe"></i> سیاره ها</a></li>
+        <li><a target="" href="#"><i class="fas fa-headphones-alt"></i> موسیقی کیهانی</a></li>
+        <li><a target="" href="#"><i class="fab fa-squarespace"></i> جهان های موازی</a></li>
+        <li><a target="" href="#"><i class="fas fa-grip-horizontal"></i> گالری</a></li>
+        <li><a target="" href="#"><i class="fab fa-mendeley"></i> ماده سیاه</a></li>
+        <li><a target="" href="#"><i class="fab fa-sith"></i> پایان جهان</a></li>
+      
+      </ul>
+      
+</div>       
+
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="shape-overlays__path" d=""></path>
+        <path class="shape-overlays__path" d=""></path>
+        <path class="shape-overlays__path" d=""></path>
+    </svg>
+</div>
+
+
+
 
   <div id="header" class="head-main">
+
+    <div class="hamburger" id="hamburger">
+      <div class="hamburger__line hamburger__line--01">
+          <div class="hamburger__line-in hamburger__line-in--01"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--02">
+          <div class="hamburger__line-in hamburger__line-in--02"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--03">
+          <div class="hamburger__line-in hamburger__line-in--03"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross01">
+          <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross02">
+          <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+      </div>
+  </div>
+
+
+
+
     <div class="play-me">
-      <button class="play" onclick="playpause()"><i class="fa fa-play" aria-hidden="true"></i><i class="fa fa-pause" aria-hidden="true"></i></button>
+      <button class="play" onclick="playpause()" title="پخش موسیقی"><i class="fa fa-play" aria-hidden="true"></i><i class="fa fa-pause" aria-hidden="true"></i></button>
     </div>
 
-    <div class="navbar box-shadow">
+    <!-- <div class="navbar box-shadow">
       <div class="d-flex justify-content-between">
         <a href="#" class="navbar-brand d-flex align-items-center"></a>
         <a class="nav-button "><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
@@ -82,7 +149,7 @@
         <h1>e</h1>
       </div>
       </div>
-    </div>
+    </div> -->
 
 
   <nav class="navbar  navbar-light ">
@@ -492,7 +559,7 @@
           <img src="./image/imperium dekadenz - horaz.jpg" alt="Imperium Dekadenz Progect" title="Imperium Dekadenz Project" class="img-fluid">
         </div>
         <div class="col-lg-8 col-md-12 about-client">
-            <h4><a href="https://imperiumdekadenz.bandcamp.com/" target="_blank" title="bandcamp">کریستیان جکوب</a></h4>
+            <h4><a href="https://imperiumdekadenz.bandcamp.com/" target="_blank" title="bandcamp">کریستین جیکب</a></h4>
             <p id="parm">
               مدیر پروژه "زوال مطلق" آلمانی کارشناس ارشد صدابرداری که از سال 2004 به همراه دامناتیو ممورای در حال فعالیت هستند طبیعت و فلسفه درون مایه آثارشان است. <a href="https://imperiumdekadenz.bandcamp.com/" target="_blank" title="bandcamp"><i class="fa fa-bandcamp"></i></a>
             </p>
@@ -513,7 +580,7 @@
 
       <div class="client row">
         <div class="col-lg-4 col-md-12 client-img">
-          <img src="./image/nebula orionis - M42.jpg" alt="" class="img-fluid">
+          <img src="./image/nebula orionis - M42.jpg" alt="Nebula Orionis" title="Nebula Orionis" class="img-fluid">
         </div>
         <div class="col-lg-8 col-md-12 about-client">
             <h4><a href="https://nebulaorionis.bandcamp.com/" title="nebula orionis project">کریستوفر جانسون</a></h4>
@@ -567,7 +634,28 @@
 
 
 
-<!------------------------------------------------>
+<!----------------------above-the-universe-section----------------------->
+<hr>
+<h1>حفره های شگفت انگیز</h1>
+<section id="above-the-universe">
+
+  <div class="container">
+    <div class="row">
+
+      <div class=" col-sm-6">
+        <!-- <div class="neil-img1">
+        <img src="./image/Neil-Armstrong.jpg" alt=""> -->
+      </div>
+    </div>
+
+      <div class=" col-sm-6">
+        <!-- <h1>حرکت به سمت بیکرانه ها</h1> -->
+      </div>
+
+    </div>
+  </div>
+
+</section>
 
   <div class="jumbotron text-center" style="margin-bottom:0">
     
@@ -596,11 +684,15 @@
   <script src="./scripts/dark-mode-switch.js"></script>
   <script src="./scripts/customfilter.js"></script>
   <script src="./scripts/script.js"></script>
-  <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script>
-  <script src="//www.google-analytics.com/analytics.js"></script>
-  <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
-  <script src="https://apis.google.com/js/platform.js" gapi_processed="true">{lang: 'en_US'}</script>
-  <script src="https://www.googletagmanager.com/gtag/js?id=AW-827833600"></script>
+  <script src="./scripts/hamburger.js"></script>
+  <script src="./scripts/easings.js"></script>
+  <script src="./scripts/jquery-migrate.min330a.js"></script>
+  <!-- <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script> -->
+  <!-- <script src="//www.google-analytics.com/analytics.js"></script> -->
+  <!-- <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script> -->
+  <!-- <script src="https://apis.google.com/js/platform.js" gapi_processed="true">{lang: 'en_US'}</script> -->
+  <!-- <script src="https://www.googletagmanager.com/gtag/js?id=AW-827833600"></script> -->
+
   <!-- <script src="./Fonts/fontawesome-5.12.0/js/all.js"></script> -->
   
 
@@ -656,7 +748,7 @@
    var muted = false;
    var vol = 1;
    song.type = 'audio/mpeg';
-   song.src = '../music/Exile  - Nebula Orionis_5.mp3';
+   song.src = './music/Exile  - Nebula Orionis_5.mp3';
    
    function skip(time) {
      if (time == 'back') {
@@ -733,6 +825,19 @@
        }
      })
 
+       //Hamburger slide menu-navigation
+       $('.hamburger-navigation li a').on('click', function() {
+      $('.transition-overlay').toggleClass("show-me");
+  });
+
+  $('.hamburger-navigation li a').on('click', function(e) {
+      e.preventDefault();
+      var goTo = this.getAttribute("href");
+
+      setTimeout(function(){
+          window.location = goTo;
+      },1000);
+  });
 
 
    </script>

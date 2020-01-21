@@ -56,7 +56,6 @@ $(function() {
   //Planet Slide
     $(".slide").hiSlide();
 
-
     
   });
 
