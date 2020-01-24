@@ -16,6 +16,7 @@
     @import url(./styles/font-awesome/css/font-awesome.min.css);
     @import url(./styles/styles.css);
     @import url(./styles/Fonts.css);
+    @import url(./styles/Zooom.css);
     
     
     @font-face {
@@ -285,7 +286,7 @@
       </p>
         <br><a class="image-link" href="https://fa.wikipedia.org/wiki/%D8%B2%D9%85%DB%8C%D9%86" target="_blank">بیشتر بدانید</a>
       </div>
-      <img id="planet-images" src="./image/Earth.gif">
+      <img id="planet-images" class="responsive" src="./image/Earth.gif">
     </div>
   </div> 
 </div>
@@ -490,7 +491,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6">
-        <div class="image-fix"><img  src="./image/Nebula-Orionis-Starthrone-2019.jpg"></div>
+        <div class="image-fix"><img  src="./image/Nebula-Orionis-Starthrone-2019.jpg" class="responsive"></div>
         <div class="image-rotate">
           <img src="./image/Nebula-Orionis-Starthrone-2019 cd.png">
         </div>
@@ -636,22 +637,33 @@
 
 <!----------------------above-the-universe-section----------------------->
 <hr>
-<h1>حفره های شگفت انگیز</h1>
 <section id="above-the-universe">
-
+  <h1>حفره های شگفت انگیز</h1>
   <div class="container">
-    <div class="row">
-
-      <div class=" col-sm-6">
-        <!-- <div class="neil-img1">
-        <img src="./image/Neil-Armstrong.jpg" alt=""> -->
+    
+    <div class="row grid">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <iframe width="320" height="190" src="https://www.youtube.com/embed/Fw2aHns1-dw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <iframe width="320" height="190" src="https://www.youtube.com/embed/sQaYWcVAjo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <iframe width="320" height="190" src="https://www.youtube.com/embed/aWuFLgY0LRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <iframe width="320" height="190" src="https://www.youtube.com/embed/tNkZsRW7h2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <iframe width="320" height="190" src="https://www.youtube.com/embed/sQaYWcVAjo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <iframe width="320" height="190" src="https://www.youtube.com/embed/sQaYWcVAjo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      
     </div>
-
-      <div class=" col-sm-6">
-        <!-- <h1>حرکت به سمت بیکرانه ها</h1> -->
-      </div>
-
     </div>
   </div>
 
@@ -687,11 +699,12 @@
   <script src="./scripts/hamburger.js"></script>
   <script src="./scripts/easings.js"></script>
   <script src="./scripts/jquery-migrate.min330a.js"></script>
-  <!-- <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script> -->
-  <!-- <script src="//www.google-analytics.com/analytics.js"></script> -->
-  <!-- <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script> -->
-  <!-- <script src="https://apis.google.com/js/platform.js" gapi_processed="true">{lang: 'en_US'}</script> -->
-  <!-- <script src="https://www.googletagmanager.com/gtag/js?id=AW-827833600"></script> -->
+  <script src="./scripts/Zooom.js"></script>
+  <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script>
+  <script src="//www.google-analytics.com/analytics.js"></script>
+  <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
+  <script src="https://apis.google.com/js/platform.js" gapi_processed="true">{lang: 'en_US'}</script>
+  <script src="https://www.googletagmanager.com/gtag/js?id=AW-827833600"></script>
 
   <!-- <script src="./Fonts/fontawesome-5.12.0/js/all.js"></script> -->
   
@@ -748,7 +761,7 @@
    var muted = false;
    var vol = 1;
    song.type = 'audio/mpeg';
-   song.src = './music/Exile  - Nebula Orionis_5.mp3';
+   song.src = './music/Terraforming - Nebula Orionis_3.mp3';
    
    function skip(time) {
      if (time == 'back') {
@@ -806,7 +819,7 @@
     $('#show').show();
     })
 
-   //music others
+   //music owl-carousel EFFECTS
 
      $('.owl-carousel').owlCarousel({
        items:6,
@@ -839,6 +852,7 @@
       },1000);
   });
 
+  //image Zoom
 
    </script>
     <!------------------Scripts-End------------------->

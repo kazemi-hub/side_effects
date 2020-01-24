@@ -44,13 +44,13 @@ button:hover
     font-family: vazir;
     font-weight: bold;
     content: attr(data-title);
-    /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
-    color:var(--globaltext);
+    /* text-shadow: 0px 0px 2px #000; */
+    color: var(--globaltext);
     font-size: 1rem;
     position: absolute;
     white-space: nowrap;
     opacity: 0;
-    z-index: 99999;
+    z-index: 9999;
     visibility: hidden;
     right: -15px;
     top: 50px;
@@ -131,13 +131,12 @@ body{
      .image-rotate img{
         width: 250px !important;
         margin-top: -150px !important;
-        margin-left: -127px !important;
+        margin-left: -97px !important;
     }
 
     .image-fix{
-        /* display: none; */
         width: 270px !important;
-        margin-left: 60px;
+        margin-left: 90px !important;
     }
 
     .glow::before, .glow::after {
@@ -296,6 +295,7 @@ display : block;
     background: transparent;
     pointer-events: auto;
     -webkit-tap-highlight-color: #111;
+
 }
 
 #menu-nav-menu .fa , .fas, .fab{
@@ -321,7 +321,6 @@ display : block;
 	visibility: hidden;
     z-index: 4013;
     direction: rtl;
-    
 }
 .hamburger-navigation li {
 	width: 100%;
@@ -376,11 +375,10 @@ display : block;
 	color: #f50c1a;
 	position: absolute;
 	right: -4px;
-	top: -14px;
+    top: -14px;
 }
 .hamburger-navigation li a:hover {
 	text-decoration: none;
-    /* text-shadow: 0 0 30px rgba(255,255,255,0.6); */
     color: var(--orange);
 }
 .hamburger-navigation.is-opened li {
@@ -663,6 +661,7 @@ display : block;
     display: none;
     height: auto !important;
     opacity: 1 !important;
+
 }
 .hamburger-navigation li *{
    -webkit-transition: .25s ease-in-out;
@@ -687,12 +686,10 @@ display : block;
    font-size: 15px;
     padding: 0 10px;
     opacity: 0.8;
-
-
 }
 .hamburger-navigation li ul li a:hover{
    opacity: 1;
-
+   
 }
 
 /*----------------Dark-Mode---------------*/
@@ -702,7 +699,7 @@ display : block;
     background-color: #111 !important;
     color: #eee;
   }
-
+  
   [data-theme="dark"] .welcome{
       margin-top: -110px;
     background: radial-gradient(circle, transparent 50%, #111 100%);
@@ -1285,6 +1282,7 @@ nav .fa-bars{
 .welcome p{
     color: #000;
     font-family: vazir;
+    font-weight: bold;
     direction: rtl;
     font-size: 0.9em;
     text-shadow: 1px 2px 4px rgb(75, 170, 177);
@@ -1408,6 +1406,7 @@ label input[type="checkbox"]:checked ~ .fa{
     padding-top: 50px;
     padding-bottom: 100px;
     font-family: vazir;
+    font-weight: bold;
 }
 
 #introduction img{
@@ -1624,7 +1623,8 @@ label input[type="checkbox"]:checked ~ .fa{
 }
 
 .grid{
-    border-radius: 25px;
+    padding: 0;
+    margin: 0;
 }
 
 .project-title{
@@ -1636,6 +1636,7 @@ label input[type="checkbox"]:checked ~ .fa{
     direction: rtl;
     text-align: right;
     padding-bottom: 15px;
+    
 }
 
 .project-aria .button-group button{
@@ -1655,6 +1656,7 @@ label input[type="checkbox"]:checked ~ .fa{
 .our-project{
     direction: rtl !important;
     text-align: right;
+
 }
 
 
@@ -1673,6 +1675,7 @@ label input[type="checkbox"]:checked ~ .fa{
 
 .element-item{
     padding: 15px;
+
 }
 
 /*-------------------Section-Comets------------------*/
@@ -1781,11 +1784,13 @@ label input[type="checkbox"]:checked ~ .fa{
 .cosmic span{
     text-align: justify;
     color:  var(--globaltext);
+    font-weight: bold;
 }
 
 .cosmic p{
     text-align: justify;
     color:  var(--globaltext);
+    font-weight: bold;
 }
 
 .cosmic a{
@@ -1818,10 +1823,11 @@ label input[type="checkbox"]:checked ~ .fa{
     -moz-animation: rotation 5s linear infinite;
     -ms-animation: rotation 5s linear infinite;
     margin-top: -376px;
-    margin-left: -12px;
+    margin-left: 42px;
 }
 
 .image-fix{
+   margin-left: 60px;
     position: relative;
     width: 380px;
     z-index: 50;
@@ -1862,7 +1868,8 @@ label input[type="checkbox"]:checked ~ .fa{
 	-webkit-justify-content: center;
 	   -moz-box-pack: center;
 	    -ms-flex-pack: center;
-	        justify-content: flex-end;
+            justify-content: center;
+           
 }
 
 .glow {
@@ -1956,7 +1963,8 @@ label input[type="checkbox"]:checked ~ .fa{
 	line-height: 30px;
 	-webkit-border-radius: 32px;
 	   -moz-border-radius: 32px;
-	        border-radius: 32px;
+            border-radius: 32px;
+            /* z-index: 99999; */
 }
 
 input[type="range"] {
@@ -2049,6 +2057,12 @@ input::-webkit-slider-thumb {
     color: var(--orange);
 }
 
+.client i{
+    text-decoration: none;
+    color: var(--orange);
+
+}
+
 .client a:hover{
    cursor: pointer;
 }
@@ -2107,40 +2121,22 @@ input::-webkit-slider-thumb {
 }
 
 /*---------------------above-the-universe-----------------------*/
-
-/* #above-the-universe{
-    position: relative;
-    max-height: 10vh;
-    background:  url(../image/space18.jpg);
-   border-radius: 15px;
-   margin: 5px;
+#above-the-universe{
+    direction: rtl;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /* background: radial-gradient(circle, rgba(0,0,0,0.4) 10%,rgba(0,0,0,0.4) 100%),url(../image/Ecto/ecto?.jpg); */
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
+    background-repeat: no-repeat;
 }
 
-#above-the-universe h1{
-    /* font-family: 'TitrBold'; */
-    font-family: var(--homa);
-    font-weight: bold;
-    font-style: normal;
-    color: var(--lightblue);
-    font-size: 4em;
-    text-align: center;
-    padding-top: 50px;
+iframe{
+    border-radius: 15px;
+    border: 1.5px solid var(--lightblue);
 }
-#above-the-universe img{
-    padding: 0;
-    border-radius: 50%;
-    /* margin-top: -100px; */
-    /* z-index: 250; */
-}
-
-.neil-img1{
-    margin-top: 100px;
-    z-index: 5000;
-} */
 
 
 

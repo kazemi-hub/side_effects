@@ -55,7 +55,18 @@ $(function() {
 
   //Planet Slide
     $(".slide").hiSlide();
-
+  
+  //zoom EFFECTS
+    window.addEventListener('load', function () {
+      new Zooom({
+        element: '.responsive',
+        padding: 80,
+        overlay: {
+          color: '#000',
+          opacity: '.5'
+        }
+      });
+    })
     
   });
 
