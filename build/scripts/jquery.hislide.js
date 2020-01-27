@@ -98,10 +98,7 @@ jupiter.hover(function () {
     imageLink.attr('href','https://fa.wikipedia.org/wiki/%D9%85%D8%B4%D8%AA%D8%B1%DB%8C_(%D8%B3%DB%8C%D8%A7%D8%B1%D9%87)');
 
   });
-jupiter.click(function () {
-    window.open('./image/Slide1.jpg');
 
-  });
 //اسلاید دوم ماه
 moon.hover(function () {
     hiddenTitle.text("کره ماه");
@@ -110,10 +107,7 @@ moon.hover(function () {
     imageLink.attr('href','https://fa.wikipedia.org/wiki/%D9%85%D8%A7%D9%87');
 
   });
-moon.click(function () {
-    window.open('./image/Slide2.jpg');
 
-  });
 //اسلاید سوم پلوتون
 pluto.hover(function () {
     hiddenTitle.text("سیارک پلوتون");
@@ -122,10 +116,7 @@ pluto.hover(function () {
     imageLink.attr('href','https://fa.wikipedia.org/wiki/%D9%BE%D9%84%D9%88%D8%AA%D9%88%D9%86');
 
   });
-pluto.click(function () {
-    window.open('./image/Slide3.jpg');
 
-  });
 //اسلاید چهارم زمین
 earth.hover(function () {
     hiddenTitle.text("سیاره زمین");
@@ -134,10 +125,7 @@ earth.hover(function () {
     imageLink.attr('href','https://fa.wikipedia.org/wiki/%D8%B2%D9%85%DB%8C%D9%86');
 
   });
-earth.click(function () {
-    window.open('./image/Slide4.jpg');
 
-  });
 //اسلاید پنجم ناهید
 venus.hover(function () {
     hiddenTitle.text("سیاره ناهید");
@@ -146,10 +134,7 @@ venus.hover(function () {
     imageLink.attr('href','https://fa.wikipedia.org/wiki/%D8%B2%D9%87%D8%B1%D9%87');
 
   });
-venus.click(function () {
-    window.open('./image/Slide5.jpg');
 
-  });
 //اسلاید ششم مریخ
 mars.hover(function () {
     hiddenTitle.text("سیاره مریخ");
@@ -158,20 +143,13 @@ mars.hover(function () {
     imageLink.attr('href','https://fa.wikipedia.org/wiki/%D9%85%D8%B1%DB%8C%D8%AE');
 
   });
-mars.click(function () {
-    window.open('./image/Slide6.jpg');
 
-  });
 //اسلاید هفتم خورشید
 sun.hover(function () {
     hiddenTitle.text("ستاره خورشید");
     hiddenContent.text('خورشید با نام‌های ادبی یا قدیمی: خور، هور، مهر، روز یکی از ستارگان کهکشان راه شیری و تنها ستارهٔ سامانهٔ خورشیدی است که در مرکز آن جای دارد. خورشید یک کُرهٔ کامل است که از پلاسمای داغ ساخته شده‌است و در میانهٔ آن میدان مغناطیسی برقرار است. این ستاره که قطری نزدیک به ۱٬۳۹۲٬۰۰۰ کیلومتر دارد سرچشمهٔ اصلی نور، انرژی، گرما و زندگی بر روی زمین است. خورشید نخستین جسم در سامانهٔ خورشیدی بر پایهٔ جرم و حجم می‌باشد. قطر خورشید نزدیک به ۱۰۹ برابر قطر زمین و جرم آن ۳۳۰ هزار برابر جرم زمین برابر با ۲‎×۱۰۳۰ کیلوگرم است. این مقدار ۹۹٫۸۶٪ کل جرم سامانهٔ خورشیدی است. انفجار نهایی یک ستارهٔ سنگین را ابرنواختر می‌نامند ولی خورشید هیچ‌گاه چنین انفجاری را تجربه نخواهد کرد زیرا کمترین جرم مورد نیاز برای رخداد یک ابرنواختر، هشت برابر جرم خورشید است. از نظر شیمیایی سه-چهارم جرم خورشید را هیدروژن و باقی‌ماندهٔ آن را بیشتر هلیم می‌سازد. پس از هیدروژن و هلیم، عنصرهای سنگین از سازندگان دیگر خورشید عبارتند از  اکسیژن، کربن، نئون و آهن و… این عنصرها، سازندهٔ ۱٫۶۹٪ از جرم خورشید اند که این مقدار خود ۵٬۶۲۸ برابر جرم زمین است. خورشید در رده‌بندی ستارگان بر پایهٔ رده‌بندی طیفی، در دستهٔ G2V جای دارد و به صورت غیررسمی با نام کوتولهٔ زرد از آن یاد می‌شود چون پرتوهای پیدای آن در طیف زرد-سبز شدیدتر است. هر چند که رنگ آن از سطح زمین، سفید باید دیده شود ولی وجود پراکندگی نور آبی در جو سبب زرد دیده شدن آن است همچنین در برچسب رده‌بندی طیفی، G2، گفته شده که دمای سطح خورشید نزدیک به ۵۵۰۵ سانتیگراد است و در V گفته شده‌است که خورشید مانند بیشتر ستارگان، یک ستارهٔ رشتهٔ اصلی است و در نتیجه انرژی خود را از راه همجوشی هسته‌ای هسته هیدروژن به هلیم فراهم می‌کند و در هر ثانیه، در هستهٔ خود، ۶۲۰ میلیون تُن هیدروژن را دچار همجوشی می‌کند.');
     hiddenImage.attr('src','./image/sun-1.gif');
     imageLink.attr('href','https://fa.wikipedia.org/wiki/%D8%AE%D9%88%D8%B1%D8%B4%DB%8C%D8%AF');
-
-  });
-sun.click(function () {
-    window.open('./image/Slide7.jpg');
 
   });
 

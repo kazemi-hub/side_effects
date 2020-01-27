@@ -150,9 +150,14 @@
     </div> -->
 
 
+
+
   <nav class="navbar  navbar-light ">
     <a class="navbar-brand" href="#"><img src="./image/logo.png"></a>
   </nav> 
+  <div class="datetime">
+    <script src="http://jalali.toolsir.com/date.class.php?timestamp=&zone=Asia/Tehran&lang=fa&date=E" type="text/javascript"></script>
+  </div>
 </div>
   
 </section>
@@ -185,12 +190,12 @@
           <h1>جهان را لمس کن، ای فرشتهٔ فرو افتاده...</h1>
           <p>جهان سازمانی به‌طور کامل پویا است. این جهان روزی آغاز شد. شاید با یک انبساط بزرگ ناگهانی مادّه؛ و ممکن است روزی پایان یابد. تمامی آنچه در کیهان وجود دارد در وجود ما نهادینه شده است! هر کدام ازما شگفتی برابر با کل کیهان داریم، ما در مقابل این جهان مسئولیم. </p>
           <div class="sidebar" id="sidebar">
-            <a href="#slider" data-title="سیاره ها"><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات"></span></button></a>
+            <a href="#سیاره-ها" data-title="سیاره ها"><button class="buttons"><span><img class="icon2" src="./image/PNG/uranus.png" alt="سیارات"></span></button></a>
             <a href="#گالری" data-title="گالری"><button class="buttons" id="reverse"><span><img id="icon1" src="./image/go reverse.gif" alt="گالری"></span></button></a>
-            <a href="#comets" data-title="شهاب سنگ ها"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها"></span></button></a>
-            <a href="#music-center" data-title="موسیقی کیهانی"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien-music.png" alt="موسیقی کیهانی"></span></button></a>
+            <a href="#شهاب-سنگها" data-title="شهاب سنگ ها"><button class="buttons"><span><img class="icon3" src="./image/PNG/asteroid.png" alt="شهاب سنگ ها"></span></button></a>
+            <a href="#موسیقی-کیهانی" data-title="موسیقی کیهانی"><button class="buttons"><span><img class="icon4" src="./image/PNG/alien-music.png" alt="موسیقی کیهانی"></span></button></a>
             <a href="#کوانتوم" data-title="بر فراز کیهان"><button class="buttons"><span><img class="icon5" src="./image/PNG/spaceship.png" alt="بر فراز کیهان"></span></button></a>
-            <a href="#" data-title="سیاره زحل"><button class="buttons"><span><img class="icon6" src="./image/PNG/saturn.png" alt="سیاره زحل"></span></button></a>
+            <a href="#سیاه-چاله" data-title="سیاهچاله‌ها"><button class="buttons"><span><img class="icon6" src="./image/PNG/blackhole.png" alt="سیاهچاله‌ها"></span></button></a>
             <a href="#" data-title="هفت اورنگ کهین"><button class="buttons"><span><img class="icon7" src="./image/PNG/ursa-minor.png" alt="هفت اورنگ کهین"></span></button></a>
             <a href="#footer" data-title="ورود/تماس با ما"><button class="buttons"><span><img class="icon8" src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما"></span></button></a>
             <label>
@@ -246,26 +251,29 @@
 <!------------------Slides- Planets------------------>
 <section id="planets">
 <div id="slider">
-  <div class="container">
+  <div class="container" id="سیاره-ها">
     <div class="row">
     <div class="col-md-12 col-lg-12 col-xl-12 text-center">
         <div class="slide hi-slide">
           <div class="hi-prev"></div>
           <div class="hi-next"></div>
           <ul id="ul-img">
-            <li class="jupiter"><img src="./image/Slide1.jpg" alt="ژوپیتر" title="ژوپیتر"></li>
-            <li class="moon"><img src="./image/Slide2.jpg" alt="ماه" title="کره ماه"></li>
-            <li class="pluto"><img src="./image/Slide3.jpg" alt="سیارک پلوتون" title="سیارک پلوتون"></li>
-            <li class="earth"><img src="./image/Slide4.jpg" alt="سیاره زمین" title="سیاره زمین"></li>
-            <li class="venus"><img src="./image/Slide5.jpg" alt="سیاره ناهید" title="سیاره ونوس"></li>
-            <li class="mars"><img src="./image/Slide6.jpg" alt="سیاره مریخ" title="سیاره مریخ"></li>
-            <li class="sun"><img src="./image/Slide7.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
+            <li class="jupiter" data-src="./image/Slide1-1.jpg" data-sub-html="<h4>پنجمین سیاره منظومه شمسی - ژوپیتر</h4><p>فاصله تا خورشید 5,000,000,000 کیلومتر و بزرگترین سیاره در منظومه شمسی</p>"><img src="./image/Slide1.jpg" alt="ژوپیتر" title="ژوپیتر"></li>
+            <li class="moon" data-src="./image/Slide2-2.jpg" data-sub-html="<h4>قمر مرموز کالیستو برای زمین - کره ماه</h4><p>فاصله تا خورشید 384,401 کیلومتر و پنجمین قمر طبیعیِ بزرگ در منظومه شمسی</p>"><img src="./image/Slide2.jpg" alt="ماه" title="کره ماه"></li>
+            <li class="pluto" data-src="./image/Slide3-3.jpg" data-sub-html="<h4>سیاره کوتوله منظومه شمسی - پلوتون</h4><p>فاصله تا خورشید 7,500,000,000 کیلومتر. پلوتون دارای اتمسفر نازکی است که از نیتروژن ، متان ، و مونوکسید کربن ، تشکیل شده</p>"><img src="./image/Slide3.jpg" alt="سیارک پلوتون" title="سیارک پلوتون"></li>
+            <li class="earth" data-src="./image/Slide4-4.jpg" data-sub-html="<h4>سومین سیاره منظومهٔ شمسی - زمین</h4><p>فاصله تا خورشید 149,000,000 کیلومتر. زمین همواره با دیگر جرم‌های آسمانی به ویژه خورشید و ماه در اندرکنش است. </p>"><img src="./image/Slide4.jpg" alt="سیاره زمین" title="سیاره زمین"></li>
+            <li class="venus" data-src="./image/Slide5-5.jpg" data-sub-html="<h4>دومین سیاره منظومه شمسی - ونوس</h4><p>فاصله تا خورشید 38,000,000 کیلومتر. زهره از نظر جرم و حجم، هفتمین جسم بزرگ و پرجرم در منظومهٔ شمسی است. </p>"><img src="./image/Slide5.jpg" alt="سیاره ناهید" title="سیاره ونوس"></li>
+            <li class="mars" data-src="./image/Slide6-6.jpg" data-sub-html="<h4>چهارمین سیاره منظومه شمسی  - مریخ</h4><p>فاصله تا خورشید 225,000,000 کیلومتر سطح مریخ بافتی بازالتی دارد که نوعی سنگ آتش‌فشانی، مشابه شن‌های سواحل هاوایی است. </p>"><img src="./image/Slide6.jpg" alt="سیاره مریخ" title="سیاره مریخ"></li>
+            <li class="sun" data-src="./image/Slide7-7.jpg" data-sub-html="<h4>تنها ستاره منظومه شمسی - خورشید</h4><p>فاصلهٔ متوسط خورشید از زمین نزدیک به ۱۴۹٫۶ میلیون کیلومتر است (یک واحد نجومی) است البته این فاصله در هنگامه‌های گوناگون حرکت زمین به گرد خورشید (در نقطه‌های اوج و حضیض) در ماه‌های ژانویه تا ژوئیه فرق می‌کند. </p>"><img src="./image/Slide7.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
+            <li class="uranus" data-src="./image/Slide8-8.jpg" data-sub-html="<h4>هفتمین سیاره منظومه شمسی - اورانوس</h4><p>فاصله تا خورشید 2,570,000,000 کیلومتر اورانوس واژه‌ایست یونانی به معنای آسمان، و نیز خدایگان آسمان نیز در میان یونانیان به همین نام خوانده می‌شد.  </p>"><img src="./image/Slide8.jpg" alt="سیاره اورانوس" title="سیاره اورانوس"></li>
+            <li class="sun" data-src="./image/Slide9-9.jpg" data-sub-html="<h4>ششمین سیاره منظومه شمسی - زحل</h4><p>فاصله تا خورشید 151,000,000 کیلومتر. سیاره زیبای  زحل جواهر منظومه شمسی است ، اما نباید به آن خیلی نزدیک شد. بادهای جو بالای آن پنج برابر سریع تر از قوی ترین تند باد های زمین هستند. </p>"><img src="./image/Slide9.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
+            <li class="sun" data-src="./image/Slide10-10.jpg" data-sub-html="<h4>هشتمین سیاره منظومه شمسی - نپتون</h4><p>فاصله تا خورشید 4,500,000,000 کیلومتر.  باد های شدید و چرخش های سریع سیاره نپتون سبب شده اند که این سیاره یکی از طوفانی ترین سیارات باشد. </p>"><img src="./image/Slide10.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
           </ul>
                      
 
           <!-- <script>
               var imgCollection = [];
-              let imgTitle=['','زوپیتر', 'ماه', 'پلوتونیوم', 'زمین', 'ونوس', 'مارس','خورشید']
+              let imgTitle=['','زوپیتر', 'ماه', 'پلوتون', 'زمین', 'ونوس', 'مارس','خورشید']
               for(let i=1; i<8; i++) {
                 imgCollection[i] = `<li><img src="./image/Slide${i}.jpg" title=${imgTitle[i]}></li>`;
               }
@@ -427,7 +435,7 @@
 
         <div class="col-sm-12 ">
           <div id="stable">
-            <h2>شهاب سنگ ها</h2>
+            <h2 id="شهاب-سنگها">شهاب سنگ ها</h2>
           <div class=" circle circle1">
               <img src="./image/comet-2.jpg">
            </div>
@@ -465,7 +473,7 @@
 
 <div class="container" id="music-center">
   <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="col-sm-12 col-md-12 col-lg-12" id="موسیقی-کیهانی">
       <div class="cosmic">
         <h1 id="کیهان">موسیقی کیهانی</h1>
         
@@ -643,20 +651,20 @@
       <div class="col-lg-3 col-md-6 col-sm-12 in-flex">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item"
-          src="https://www.youtube.com/embed/Fw2aHns1-dw" frameborder="0"
+          src="https://www.youtube.com/embed/cSZyTL3mK1w" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope;
           picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="title py-4">
           <h4>آیا جهان لبه دارد؟</h4>
-          <p class="u-secondary">جهان از آنچه فکر می کردیم سریعتر گسترش می یابد </p>
+          <p class="u-secondary">جهان چگونه گسترش می یابد </p>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-12 in-flex">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item"
-          src="https://www.youtube.com/embed/9PahVIh_95E" frameborder="0"
+          src="https://www.youtube.com/embed/1AHeyjttkg0" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope;
           picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -669,7 +677,7 @@
       <div class="col-lg-3 col-md-6 col-sm-12 in-flex">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item"
-          src="https://www.youtube.com/embed/7R9jnclysjY" frameborder="0"
+          src="https://www.youtube.com/embed/uKCDmoAWG4M" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope;
           picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -682,7 +690,7 @@
       <div class="col-lg-3 col-md-6 col-sm-12 in-flex">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item"
-          src="https://www.youtube.com/embed/zgL7XxNaYkQ" frameborder="0"
+          src="https://www.youtube.com/embed/lcWn4iHx-oY" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope;
           picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -766,7 +774,7 @@
 
 <div class="container">
 <div class="diamond-grid">
-  <div class="item ecto1"><img src="./image/Ecto/ecto1.jpg" title="برای مشاهده کلیک کنید"><a  href="./image/Ecto/ecto1.jpg"></a></div>
+  <div class="item ecto1"><img src="./image/1.jpg" title="برای مشاهده کلیک کنید"></div>
   <div class="item ecto2"><img src="./image/Ecto/ecto2.jpg" title="برای مشاهده کلیک کنید"></div>
   <div class="item ecto3"><img src="./image/Ecto/ecto3.jpg" title="برای مشاهده کلیک کنید"></div>
   <div class="item ecto4"><img src="./image/Ecto/ecto14.jpg" title="برای مشاهده کلیک کنید"></div>
@@ -783,6 +791,36 @@
 </div>
 </div>
 
+<div class="container">
+  <div class="blackholegallery">
+
+    <div class="demo-gallery">
+      <ul id="lightgallery" class="list-unstyled row">
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/1-375.jpg 375, ./image/1-480.jpg 480, ./image/1.jpg 800" data-src="./image/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/thumb-1.jpg">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/2-375.jpg 375, ,/image/2-480.jpg 480, ./image/2.jpg 800" data-src="./image/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/thumb-2.jpg">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/13-375.jpg 375, ./image/13-480.jpg 480, ./image/13.jpg 800" data-src="./image/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/thumb-13.jpg">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/4-375.jpg 375, ./image/4-480.jpg 480, ./image/4.jpg 800" data-src="image/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/thumb-4.jpg">
+              </a>
+          </li>
+      </ul>
+  </div>
+
+  </div>
+</div>
 
   <div class="jumbotron text-center" style="margin-bottom:0">
     
@@ -792,9 +830,7 @@
     </form>
 
     <p>Footer</p>
-    <div class="datetime">
-    <script src="http://jalali.toolsir.com/date.class.php?timestamp=&zone=Asia/Tehran&lang=fa&date=امروز l، j M Y" type="text/javascript"></script>
-    </div>
+
   </div>
   
   <script src="./scripts/jquery.js"></script>
@@ -819,6 +855,9 @@
   <script src="./scripts/jquery-migrate.min330a.js"></script>
   <script src="./scripts/Zooom.js"></script>
   <script src="./scripts/jquery.diamonds.js"></script>
+  <script src="./scripts/Picturefill.min.js"></script>
+  <script src="./scripts/lightgallery-all.min.js"></script>
+  <script src="./scripts/jquery.mousewheel.min.js"></script>
   <!-- <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script>
   <script src="//www.google-analytics.com/analytics.js"></script>
   <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
@@ -1006,6 +1045,15 @@
       $('#hide-bholetext').hide(500);
     $('#show-bholetext').show();
     })
+
+
+    $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+        });
+
+    $(document).ready(function(){
+            $('#ul-img').lightGallery();
+        });
    </script>
     <!------------------Scripts-End------------------->
     
