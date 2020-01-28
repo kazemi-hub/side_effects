@@ -17,6 +17,8 @@
     @import url(./styles/styles.css);
     @import url(./styles/Fonts.css);
     @import url(./styles/Zooom.css);
+    @import url(./styles/mdb.css);
+
     
     
     @font-face {
@@ -201,7 +203,7 @@
             <label>
               <input type="checkbox" name="" id="darkSwitch" title="حالت تاریک">
               <span class="btn buttons"></span>
-              <i class="fa fa-power-off" data-title="حالت تاریک"></i>
+              <i class="fa fa-power-off wow flash slow" data-title="حالت تاریک"></i>
             </label>
         </div>
       </div>
@@ -258,16 +260,17 @@
           <div class="hi-prev"></div>
           <div class="hi-next"></div>
           <ul id="ul-img">
-            <li class="jupiter" data-src="./image/Slide1-1.jpg" data-sub-html="<h4>پنجمین سیاره منظومه شمسی - ژوپیتر</h4><p>فاصله تا خورشید 5,000,000,000 کیلومتر و بزرگترین سیاره در منظومه شمسی</p>"><img src="./image/Slide1.jpg" alt="ژوپیتر" title="ژوپیتر"></li>
-            <li class="moon" data-src="./image/Slide2-2.jpg" data-sub-html="<h4>قمر مرموز کالیستو برای زمین - کره ماه</h4><p>فاصله تا خورشید 384,401 کیلومتر و پنجمین قمر طبیعیِ بزرگ در منظومه شمسی</p>"><img src="./image/Slide2.jpg" alt="ماه" title="کره ماه"></li>
-            <li class="pluto" data-src="./image/Slide3-3.jpg" data-sub-html="<h4>سیاره کوتوله منظومه شمسی - پلوتون</h4><p>فاصله تا خورشید 7,500,000,000 کیلومتر. پلوتون دارای اتمسفر نازکی است که از نیتروژن ، متان ، و مونوکسید کربن ، تشکیل شده</p>"><img src="./image/Slide3.jpg" alt="سیارک پلوتون" title="سیارک پلوتون"></li>
-            <li class="earth" data-src="./image/Slide4-4.jpg" data-sub-html="<h4>سومین سیاره منظومهٔ شمسی - زمین</h4><p>فاصله تا خورشید 149,000,000 کیلومتر. زمین همواره با دیگر جرم‌های آسمانی به ویژه خورشید و ماه در اندرکنش است. </p>"><img src="./image/Slide4.jpg" alt="سیاره زمین" title="سیاره زمین"></li>
-            <li class="venus" data-src="./image/Slide5-5.jpg" data-sub-html="<h4>دومین سیاره منظومه شمسی - ونوس</h4><p>فاصله تا خورشید 38,000,000 کیلومتر. زهره از نظر جرم و حجم، هفتمین جسم بزرگ و پرجرم در منظومهٔ شمسی است. </p>"><img src="./image/Slide5.jpg" alt="سیاره ناهید" title="سیاره ونوس"></li>
-            <li class="mars" data-src="./image/Slide6-6.jpg" data-sub-html="<h4>چهارمین سیاره منظومه شمسی  - مریخ</h4><p>فاصله تا خورشید 225,000,000 کیلومتر سطح مریخ بافتی بازالتی دارد که نوعی سنگ آتش‌فشانی، مشابه شن‌های سواحل هاوایی است. </p>"><img src="./image/Slide6.jpg" alt="سیاره مریخ" title="سیاره مریخ"></li>
             <li class="sun" data-src="./image/Slide7-7.jpg" data-sub-html="<h4>تنها ستاره منظومه شمسی - خورشید</h4><p>فاصلهٔ متوسط خورشید از زمین نزدیک به ۱۴۹٫۶ میلیون کیلومتر است (یک واحد نجومی) است البته این فاصله در هنگامه‌های گوناگون حرکت زمین به گرد خورشید (در نقطه‌های اوج و حضیض) در ماه‌های ژانویه تا ژوئیه فرق می‌کند. </p>"><img src="./image/Slide7.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
-            <li class="uranus" data-src="./image/Slide8-8.jpg" data-sub-html="<h4>هفتمین سیاره منظومه شمسی - اورانوس</h4><p>فاصله تا خورشید 2,570,000,000 کیلومتر اورانوس واژه‌ایست یونانی به معنای آسمان، و نیز خدایگان آسمان نیز در میان یونانیان به همین نام خوانده می‌شد.  </p>"><img src="./image/Slide8.jpg" alt="سیاره اورانوس" title="سیاره اورانوس"></li>
-            <li class="sun" data-src="./image/Slide9-9.jpg" data-sub-html="<h4>ششمین سیاره منظومه شمسی - زحل</h4><p>فاصله تا خورشید 151,000,000 کیلومتر. سیاره زیبای  زحل جواهر منظومه شمسی است ، اما نباید به آن خیلی نزدیک شد. بادهای جو بالای آن پنج برابر سریع تر از قوی ترین تند باد های زمین هستند. </p>"><img src="./image/Slide9.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
-            <li class="sun" data-src="./image/Slide10-10.jpg" data-sub-html="<h4>هشتمین سیاره منظومه شمسی - نپتون</h4><p>فاصله تا خورشید 4,500,000,000 کیلومتر.  باد های شدید و چرخش های سریع سیاره نپتون سبب شده اند که این سیاره یکی از طوفانی ترین سیارات باشد. </p>"><img src="./image/Slide10.jpg" alt="ستاره خورشید" title="ستاره خورشید"></li>
+            <li class="mercury" data-src="./image/Slide0-0.jpg" data-sub-html="<h4>اولین سیاره منظومه شمسی - عطارد</h4><p>نزدیک‌ترین سیاره به خورشید در منظومهٔ شمسی  و تندروترین سیارهٔ منظومهٔ شمسی است که با سرعتی حدود ۴۸ کیلومتر بر ثانیه، هر ۸۸ روز یک بار خورشید را دور می‌زند.</p>"><img src="./image/Slide0.jpg" alt="سیاره عطارد" title="سیاره عطارد"></li>
+            <li class="venus" data-src="./image/Slide5-5.jpg" data-sub-html="<h4>دومین سیاره منظومه شمسی - ونوس</h4><p>فاصله تا زمین 38,000,000 کیلومتر. زهره از نظر جرم و حجم، هفتمین جسم بزرگ و پرجرم در منظومهٔ شمسی است. </p>"><img src="./image/Slide5.jpg" alt="سیاره ناهید" title="سیاره ونوس"></li>
+            <li class="earth" data-src="./image/Slide4-4.jpg" data-sub-html="<h4>سومین سیاره منظومهٔ شمسی - زمین</h4><p>فاصله تا زمین 149,000,000 کیلومتر. زمین همواره با دیگر جرم‌های آسمانی به ویژه خورشید و ماه در اندرکنش است. </p>"><img src="./image/Slide4.jpg" alt="سیاره زمین" title="سیاره زمین"></li>
+            <li class="mars" data-src="./image/Slide6-6.jpg" data-sub-html="<h4>چهارمین سیاره منظومه شمسی  - مریخ</h4><p>فاصله تا زمین 225,000,000 کیلومتر سطح مریخ بافتی بازالتی دارد که نوعی سنگ آتش‌فشانی، مشابه شن‌های سواحل هاوایی است. </p>"><img src="./image/Slide6.jpg" alt="سیاره مریخ" title="سیاره مریخ"></li>
+            <li class="jupiter" data-src="./image/Slide1-1.jpg" data-sub-html="<h4>پنجمین سیاره منظومه شمسی - ژوپیتر</h4><p>فاصله تا زمین 5,000,000,000 کیلومتر و بزرگترین سیاره در منظومه شمسی</p>"><img src="./image/Slide1.jpg" alt="ژوپیتر" title="ژوپیتر"></li>
+            <li class="saturn" data-src="./image/Slide9-9.jpg" data-sub-html="<h4>ششمین سیاره منظومه شمسی - زحل</h4><p>فاصله تا زمین 151,000,000 کیلومتر. سیاره زیبای  زحل جواهر منظومه شمسی است ، اما نباید به آن خیلی نزدیک شد. بادهای جو بالای آن پنج برابر سریع تر از قوی ترین تند باد های زمین هستند. </p>"><img src="./image/Slide9.jpg" alt="سیاره  زحل" title="سیاره زحل"></li>
+            <li class="uranus" data-src="./image/Slide8-8.jpg" data-sub-html="<h4>هفتمین سیاره منظومه شمسی - اورانوس</h4><p>فاصله تا زمین 2,570,000,000 کیلومتر اورانوس واژه‌ایست یونانی به معنای آسمان، و نیز خدایگان آسمان نیز در میان یونانیان به همین نام خوانده می‌شد.  </p>"><img src="./image/Slide8.jpg" alt="سیاره اورانوس" title="سیاره اورانوس"></li>
+            <li class="neptune" data-src="./image/Slide10-10.jpg" data-sub-html="<h4>هشتمین سیاره منظومه شمسی - نپتون</h4><p>فاصله تا خورشید 4,500,000,000 کیلومتر.  باد های شدید و چرخش های سریع سیاره نپتون سبب شده اند که این سیاره یکی از طوفانی ترین سیارات باشد. </p>"><img src="./image/Slide10.jpg" alt="سیاره نپتون" title="سیاره نپتون"></li>
+            <li class="moon" data-src="./image/Slide2-2.jpg" data-sub-html="<h4>قمر مرموز کالیستو برای زمین - کره ماه</h4><p>فاصله تا زمین 384,401 کیلومتر و پنجمین قمر طبیعیِ بزرگ در منظومه شمسی</p>"><img src="./image/Slide2.jpg" alt="ماه" title="کره ماه"></li>
+            <li class="pluto" data-src="./image/Slide3-3.jpg" data-sub-html="<h4>سیاره کوتوله منظومه شمسی - پلوتون</h4><p>فاصله تا زمین 7,500,000,000 کیلومتر. پلوتون دارای اتمسفر نازکی است که از نیتروژن ، متان ، و مونوکسید کربن ، تشکیل شده</p>"><img src="./image/Slide3.jpg" alt="سیارک پلوتون" title="سیارک پلوتون"></li>
           </ul>
                      
 
@@ -285,13 +288,13 @@
     
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <div class="review-moon">
-      <h1 class="h-title">سیاره زمین</h1>
+      <h1 class="h-title">سیاره ژوپیتر</h1>
       <p class="text-count0">
-        زمین سومین سیارهٔ سامانهٔ خورشیدی است که در فاصلهٔ۱۴۹٬۶۰۰٬۰۰۰کیلومتری از ستارهٔ خورشید قرار دارد. از نظر واژه‌شناسی ایرانی، زم در زبان اوستایی به معنای سرد بوده‌است که با پسوند ین، واژۀ زمین را به معنای جسم سرد به وجود آورده‌است. این سیاره چگال‌ترین  به دلیل دارا بودن منبع وسیع آهن و فلزات دیگر و از نظر بزرگی پنجمین سیاره از هشت سیارهٔ سامانهٔ خورشیدی است. همچنین در میان چهار سیارهٔ سنگی گردان به دور خورشید تیر، ناهید، زمین و مریخ  زمین بزرگترین آن‌ها است. گاهی از آن با نام‌های جهان و سیارهٔ آبی نیز یاد می‌شود. نام لاتین آن Terra است. در سامانهٔ خورشیدی، فاصلهٔ زمین تا خورشید بین فاصلهٔ زهره یا ناهید تا خورشید و فاصلهٔ مریخ یا بهرام تا خورشید است. زمین جزو سیارات داخلی سامانهٔ خورشیدی به‌شمار می‌آید. زمین ششمین جسم در سامانه خورشیدی بر پایهٔ جرم و حجم می‌باشد. نزدیک به ۴٫۵۴ میلیارد سال به صورت دقیق تر ۰٫۰۰۰۶ ± ۴٫۵۶۷۲ میلیارد سال از پیدایش زمین می‌گذرد و زندگی بر روی سطح آن در طول یک میلیارد سال پدیدار گشته‌است. هم‌اکنون زمین خانهٔ میلیون‌ها گونه از جانداران است که انسان یکی از آن‌ها است. زیست‌کرهٔ زمین با گذر زمان جو زمین و دیگر شرایط فیزیکی و شیمیایی این سیاره را دچار دگرگونی‌های شگرفی کرده‌است و محیطی را فراهم کرده‌است تا جانداران زنده بتوانند به رشد و زیست‌زایی بپردازند. همچنین در اثر این دگرگونی‌ها لایهٔ اوزون به دور این سیاره تشکیل شده‌است، لایه‌ای که با کمک میدان مغناطیسی زمین مانع از ورود پرتوهای آسیب‌رسان خورشید می‌شود و به این ترتیب اجازه می‌دهد در زمین زندگی ادامه یابد.
+          در یک نگاه کوتاه، ژوپیتر یا مشتری بزرگ‌ترین سیاره در سامانهٔ خورشیدی است. این سیاره غول گازی با جرم یک هزارم خورشید است، ولی جرمی دو و نیم برابر تمامی دیگر سیاره‌های سامانهٔ خورشیدی دارد و دومین جسم در سامانهٔ خورشیدی بر پایهٔ جرم و حجم است. از نظر دوری از خورشید، مشتری پنجمین سیاره پس از تیر، ناهید، زمین و بهرام است. مشتری چهارمین جسم درخشان در آسمان پس از خورشید، ماه و ناهید است. اگرچه گهگاه مریخ درخشان‌تر به‌نظر می‌آید. به کمک دوربین دوچشمی برخی ماه‌های هرمز نیز قابل دیدن می‌باشند. جرم مشتری ۲٫۵ بار از مجموع جرم دیگر سیاره‌های سامانه خورشیدی بیشتر است. جرم مشتری ۳۱۸ بار بیشتر از جرم زمین است. قطر آن ۱۱ برابر قطر زمین است. مشتری می‌تواند ۱۳۰۰ زمین را درخود جای دهد. میانگین دوری آن از خورشید در حدود ۷۷۸ میلیون و ۵۰۰ هزار کیلومتر است یعنی بیشتر از ۵ برابر دوری زمین از خورشید. ستاره‌شناسان با تلسکوپ‌های برپاشده در زمین و ماهوارههائی که در مدار زمین می‌گردند به بررسی مشتری می‌پردازند. ایالات متحده تا کنون ۶ فضاپیمای بدون سرنشین را به مشتری فرستاده‌است. در ژوئیه ۱۹۹۴، هنگامی که ۲۱ تکه از دنباله‌دار شومیکر-لوی ۹ با اتمسفر مشتری برخورد کرد ستاره‌شناسان شاهد رویدادی بسیار تماشایی بودند. این برخورد برانگیزاننده انفجارهای سهمناکی شد که پاره‌ای از آن‌ها قطری بزرگ‌تر از قطر زمین داشتند
       </p>
-        <br><a class="image-link" href="https://fa.wikipedia.org/wiki/%D8%B2%D9%85%DB%8C%D9%86" target="_blank">بیشتر بدانید</a>
+        <br><a class="image-link" href="https://fa.wikipedia.org/wiki/%D9%85%D8%B4%D8%AA%D8%B1%DB%8C_(%D8%B3%DB%8C%D8%A7%D8%B1%D9%87)" target="_blank">بیشتر بدانید</a>
       </div>
-      <img id="planet-images" class="responsive" src="./image/Earth.gif">
+      <img id="planet-images" class="responsive" src="./image/jupiter.gif">
     </div>
   </div> 
 </div>
@@ -479,12 +482,12 @@
         
         <span id="extened">
           موسیقی کیهانی اشاره دارد به نوای عارفانه ای از نت های هستی، تمامی آنچه که در پیرامون ما در جریان و حتی در گذار از کالبد موجودات زنده و مرده کیهان است، در بیان متافیزیک و اولترا فیزیک پیوند های مابین ریسمان های هستی از جهان قابل روئیت تا ماده و انرژی سیاه با ریسمان هایی به یکدیگر متصل اند که تشکیل یک هارمونی داده و اگر آنها را در غالب یک سناریو و چیدمانی از نت ها تصور کنیم به یک موسیقی کیهانی دست خواهیم یافت</span>
-        <span><a id="show" href="#extened">... <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></span>
+        <span><a id="show" href="#extened">... <i class="fa fa-chevron-circle-down animated fadeInDown infinite" aria-hidden="true"></i></a></span>
         <p id="hide-text"></br>
           براساس نظریه ریسمان ها، اگر یک ابر میکروسکوپ داشته باشیم و بتوانیم به دقت به قلب یک الکترون بنگریم، یک ذره نقطه ای، بلکه ریسمانی مرتعش را مشاهده خواهیم کرد. ( این ریسمان بسیار کوچک است، به اندازه طول پلانک برابر با ۳۳- ^۱۰ سانتی متر، میلیاردها بار کوچکتر از یک پروتون، بنابراین توان ذرات زیراتمی بصورت نقطه ای دیده می شوند. ) اگر بخواهیم این ریسمان را به ارتعاش در آوریم، صدای تغییر خواهد کرد؛ مثلا الکترون ممکن است به یک نوترینو تبدیل شود. و اگر دوباره آن را به ارتعاش در آوریم، ممکن است به یک کوارک تبدیل می شود. در حقیقت اگر ریسمان را با شدت های مختلف به لرزه در آوریم، می توانیم آن را به هر کدام از ذرات زیر اتمی شناخته شده تبدیل کینم. به این ترتیب نظریه ریسمان ها می تواند به راحتی این موضوع را توضیح دهد که چرا تعداد ذرات زیر اتمی تا به این حد زیاد است.
 
 آنها چیزی نیستند جز نت های متفاوتی که می توان بر روی ابر ریسمان نواخت. در حقیقت تمام زیر ذرات موجود در جهان را می توان بصورت ارتعاشات یک ریسمان نشان داد که « هارمونی » های ریسمان همان قوانین فیزیک هستند.
-<a  id="hide" href="#کیهان"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+<a  id="hide" href="#کیهان"><i class="fa fa-chevron-circle-up animated fadeInUp infinite" aria-hidden="true"></i></a>
 </p>
 
       </div>
@@ -538,9 +541,9 @@
     <div class="row text-center">
       <div class="col-12">
         <h1 class="title-h1"> هنرمندان مشهور این سبک</h1>
-        <h5>
+        <p class="paragraph">
           ریشه این سبک موسیقی را قطعا باید در سرزمین های سرد و سفید شمال جستجو کرد. آلمان، ایسلند، روسیه، نروژ و سوئد خواستگاه این هنر بی بدیل اند. پروژه ها و گروه هایی که با ساب ژانر های امبینت، دارک امبینت، امبینت بلک و اتمسفریک بلک به نظاهره و بیان گوشه ای از چشم انداز گیتی میپردازند، هنر درون گرایی در کشور های سردسیر به شدت قابل توجه است، شاید به همین خاطر است که سبک زندگی انسان دوستانه و طبیعت گرایانه آنها برای سالیان دراز این مردمان را در زمره با فرهنگ ترین انسان های کره خاکی قرار داده است، آنها از خرافات و داستان سرایی های مکاتب دور اند و هر دیدگاهی را به راحتی نمیپذیرند. فلسفه های بسیاری در مورد خلق و خوی این سرزمین های سپید وجود دارد که میتوان در پیرامون آن  به بذر های ستاره ای اشاره کرد. در این مورد در آینده مطالبی قرار خواهیم داد.
-        </h5>
+        </p>
       </div>
     </div>
   </div>
@@ -644,8 +647,8 @@
 <hr>
 <section id="above-the-universe">
   <div class="container">
-    <h1 class="title-h1" id="کوانتوم"> کیهان از نگاه ریاضیات کوانتومی</h1>
-    <h3 class="universe-text-secondary"> (بر فراز کیهان) مستندهای اختصاصی</h3>
+    <h1 class="title-h1 wow fadeInUp" id="کوانتوم"> کیهان از نگاه ریاضیات کوانتومی</h1>
+    <h3 class="universe-text-secondary wow jello"> (بر فراز کیهان) مستندهای اختصاصی</h3>
     <div class="row">
 
       <div class="col-lg-3 col-md-6 col-sm-12 in-flex">
@@ -657,7 +660,7 @@
         </div>
         <div class="title py-4">
           <h4>آیا جهان لبه دارد؟</h4>
-          <p class="u-secondary">جهان چگونه گسترش می یابد </p>
+          <p class="u-secondary wow slideInRight">جهان چگونه گسترش می یابد </p>
         </div>
       </div>
 
@@ -670,7 +673,7 @@
         </div>
         <div class="title py-4">
           <h4>کشف جهان</h4>
-          <p class="u-secondary">قدرتمندترین شیء در جهان</p>
+          <p class="u-secondary wow slideInRight">قدرتمندترین شیء در جهان</p>
         </div>
       </div>
 
@@ -683,7 +686,7 @@
         </div>
         <div class="title py-4">
           <h4>مرکز جهان کجاست؟</h4>
-          <p class="u-secondary">جستجوی زندگی در فضا </p>
+          <p class="u-secondary wow slideInRight">جستجوی زندگی در فضا </p>
         </div>
       </div>
 
@@ -696,14 +699,14 @@
         </div>
         <div class="title py-4">
           <h4>سفر به مرکز کیهان</h4>
-          <p class="u-secondary">سفری در فضا و زمان </p>
+          <p class="u-secondary wow slideInRight">سفری در فضا و زمان </p>
         </div>
       </div>
     
     
-    <span>
+    <span class="wow fadeOutDownBig">
       در دنیای کوانتومی جهان کاملا متفاوت است. جهانی که ما می بینیم از ذراتی تشکیل شده اند که واقعا رفتاری عجیب و شگفت انگیز دارند. یک الکترون در دنیای کوانتومی می تواند در یک لحظه در دو مکان متفاوت باشد، قوانینی که بر این ذرات حاکمند نیز دنیای شگفت انگیز را حیرت آور می کنند.
-    <a id="show-unitext"  href="#بیگ">... <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></span>
+    <a id="show-unitext"  href="#بیگ">... <i class="fa fa-chevron-circle-down animated fadeInDown infinite" aria-hidden="true"></i></a></span>
       
     <p id="hide-unitext">
       به گزارش بیگ بنگ، چقدر احتمال دارد ناگهان محو شوید و سپس دوباره در طرف دیگر دیوار ظاهر؟ براساس نظریه کوانتوم، احتمال کوچک ولی در عین حال قابل محاسبه ای وجود دارد که این اتفاق بیفتد. یا مثلا احتمال اینکه ما در اتاق خود از هم پاشیده و بر روی مریخ دوباره سر هم شویم. در واقع این خاصیت الکترون های سازنده ی بدن شماست که خاصیت این را دارند که یک لحظه در چندین مکان مختلف در جهان هستی باشند. البته این احتمال چنان کوچک است که برای رخ دادن آن باید زمانی بیشتر از حتی عمر جهان صبر کنیم. در نتیجه در زندگی روزمره ما می توان چنین رویدادهای غیر محتملی را نادیده گرفت. در حالی که در سطوح زیر اتمی، چنین احتمالاتی برای عملکرد دستگاههای الکترونیکی، کامپیوترها و لیزرها، بسیار تعیین کننده و حیاتی محسوب می شوند.
@@ -714,7 +717,7 @@
     <img class="hide-unitext" src="./image/Ecto/Ecto-gif3.gif" id="بیگ">
     اما نکته ی شگفت انگیز و عجیبی وجود دارد: در لحظه ی بیگ بنگ، جهان بسیار کوچک تر از الکترون بود. هر فیزیکدانی با این موافق است که الکترونها باید کوانتیده باشند، یعنی آنها با یک معادله ی موج احتمالاتی( معادله دیراک ) توصیف شوند و می توانند در حالت هایی موازی وجود داشته باشند. بنابراین اگر الکترون ها باید کوانتیده باشند و اگر جهان زمانی کوچکتر از الکترون بوده است، آنگاه جهان نیز باید در حالت های موازی وجود داشته باشد، نظریه ای که بطور طبیعی با رهیافت « چند جهانی » ختم می شود.
     در این نظریه، جهان به سادگی در حالت های موازی وجود دارد که همگی در یک تابع موج اصلی موسوم به « تابع موج جهان » تعریف می شوند. در واقع اگر کل جهان بخشی از یک تابع موج باشد، آنگاه دیگر نیازی به یک ناظر کیهانی، کسی که از بیرون جهان بتواند کل جهان را به یکباره مشاهده کند نیست. زیرا اگر الکترون و ذرات می توانند در یک لحظه چندین مکان داشته باشند پس احتمالا ذره ی سازنده ی جهان ما نیز باید در آن لحظه دارای چندین مکان می بود. بنابراین امکان دارد این ذرات جهان های موازی دیگری را نیز به وجود آورده باشند، جهان هایی که احتمال وجود آنها در هر جایی از کائنات ممکن است.
-    <a id="hide-unitext-btn" href="#کوانتوم"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></p>
+    <a id="hide-unitext-btn" href="#کوانتوم"><i class="fa fa-chevron-circle-up animated fadeInUp infinite" aria-hidden="true"></i></a></p>
 
     </div>
     </div>
@@ -723,6 +726,7 @@
 </section>
 
 <!----------------Black-Holes------------------------->
+<section class="awesome-holes">
 
 <div id="black-holes">
 <div class="container">
@@ -733,7 +737,7 @@
         <h3 class="text-secondary">سیاه چاله ها</h3>
         <span>
           سیاه‌چاله‌‌ها ناحیه‌ای از فضا-زمان هستند که بسیار متراکم بوده و جاذبه گرانشی بسیار شدیدی دارند به گونه‌ای که حتی نور نیز توان گریز از گرانش آنها را ندارد. هیچ چیزی در فضا قدرتمندتر از سیاهچاله‌ها نیست، پژوهشگران تلاش می‌کنند تا توضیح دهند که چرا با فیزیک عادی نمی‌توان به ماهیت آنها پی برد یا درون این هیولاها چه اتفاقی می‌افتد. هر سال این پدیده مرموز سرنخ‌های عجیب و ترسناک درباره ماهیت واقعی خود به ما نشان می‌دهد.
-          <a href="#چاله" id="show-bholetext" class="">... <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a></span></br>
+          <a href="#چاله" id="show-bholetext" class="">... <i class="fa fa-chevron-circle-down animated fadeInDown infinite" aria-hidden="true"></i></a></span></br>
           <br> <h5 id="hide-bholetext">
             در سال ۲۰۱۸ گرسنه‌ترین سیاهچاله جهان ثبت شد که اشتهای زیادی دارد و در هر ۲ روز جسمی برابر با خورشید را می‌بلعد. این سیاه‌چاله بیشترین سرعت رشد را در جهان دارد و خوشبختانه از ما بسیار دور است. اگر این هیولا در مرکز کهکشان راه شیری بود اشعه ایکس خارج شده از آن می‌توانست تمام زندگی در روی زمین را نابود کند. 
 
@@ -765,7 +769,7 @@
 لئوب میگوید: حتی اگر یافته های فرمی اشتباه باشد، آینده ی ردیاب گرانشی لیگو باید برای دریافت امواج سیاهچاله های ادغام شده را زیر نظر داشته باشد، زیرا طبیعت همیشه میتواند غافلگیرمان کند. اگر انفجار گامای بیشتری همراه با امواج گرانشی شناسایی شود، یک راه جدید برای اندازه گیری فاصله ها و انبساط کیهان به ما نشان می دهد. با کشف بازتاب امواج گاما و اندازه گیری تناوب آن و بعد مقایسه فاصله ی مستقل با لیگو، اخترشناسان میتوانند پارامترهای کیهانی را شناسایی کنند. لئوب میگوید:« سیاهچاله های نجومی بسیار ساده تر از دیگر فاصله هایی ک معرف و معیار هست، مثل ابرنواخترها اندازه گیری می شوند، چرا که تنها با جرم و چرخششان تعریف می شوند.»
 
 ولکر بروم از دانشگاه تگزاس میگوید:« این یک مقاله برای تنظیم برنامه ی کاری است که احتمالا مستلزم کارهای پیگیرانه در دوره ی بحرانی پس کشف اولیه ی لیگو میباشد، زیرا درک دلایل کامل آن چالش بزرگی ایجاد کرده است. اگر این فرضیه یک راهنمایی باشد، لئوب با استفاده از امواج گرانشی و امواج الکترومغناطیسی رصد شده می تواند نوید بخش دید عمیق تری به طبیعت فیزیکی باشد.» 
-        <a id="hide-bholetext-btn" href="#سیاه-چاله"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></h5>
+        <a id="hide-bholetext-btn" class="" href="#سیاه-چاله"><i class="fa fa-chevron-circle-up animated fadeInUp infinite" aria-hidden="true"></i></a></h5>
        </div>
       </div>
     </div>
@@ -773,8 +777,8 @@
 </div>
 
 <div class="container">
-<div class="diamond-grid">
-  <div class="item ecto1"><img src="./image/1.jpg" title="برای مشاهده کلیک کنید"></div>
+<div class="diamond-grid animated fadeInUp" id="diamonds">
+  <div class="item ecto1"><img src="./image/Ecto/ecto1.jpg" title="برای مشاهده کلیک کنید"></div>
   <div class="item ecto2"><img src="./image/Ecto/ecto2.jpg" title="برای مشاهده کلیک کنید"></div>
   <div class="item ecto3"><img src="./image/Ecto/ecto3.jpg" title="برای مشاهده کلیک کنید"></div>
   <div class="item ecto4"><img src="./image/Ecto/ecto14.jpg" title="برای مشاهده کلیک کنید"></div>
@@ -794,33 +798,98 @@
 <div class="container">
   <div class="blackholegallery">
 
-    <div class="demo-gallery">
+    <div class="demo-gallery wow fadeInUp">
       <ul id="lightgallery" class="list-unstyled row">
-          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/1-375.jpg 375, ./image/1-480.jpg 480, ./image/1.jpg 800" data-src="./image/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/1-375.jpg 375, ./image/1-480.jpg 480, ./image/1.jpg 800" data-src="./image/Ecto/ecto1.jpg" data-sub-html="<h4>RX J1131-1231</h4><p>یک کوازار حاوی سیاه چاله از راه دور که در حدود 6 میلیارد سال نوری از زمین در دهانه صورت فلکی واقع شده است در حال مکیدن یک ابر نو ابرنواختر...</p>">
               <a href="">
-                  <img class="img-responsive" src="./image/thumb-1.jpg">
+                  <img class="img-responsive" src="./image/Ecto/ecto1.jpg">
+                </a>
+                <p class="text-secondary">RX J1131-1231</p>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/2-375.jpg 375, ,/image/2-480.jpg 480, ./image/2.jpg 800" data-src="./image/Ecto/ecto2.jpg" data-sub-html="<h4>TON 618</h4><p>سیاه چاله ای بسیار دور و درخشان با یک خط جذب بسیار بزرگ که صدایی همچون امواج زیر رادیویی دارد.در فاصله 66 میلیارد سال نوری....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto2.jpg">
+              </a>
+              <p class="text-secondary">TON 618</p>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/13-375.jpg 375, ./image/13-480.jpg 480, ./image/13.jpg 800" data-src="./image/Ecto/ecto3.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto3.jpg">
               </a>
           </li>
-          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/2-375.jpg 375, ,/image/2-480.jpg 480, ./image/2.jpg 800" data-src="./image/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/4-375.jpg 375, ./image/4-480.jpg 480, ./image/4.jpg 800" data-src="./image/Ecto/ecto4.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
               <a href="">
-                  <img class="img-responsive" src="./image/thumb-2.jpg">
+                  <img class="img-responsive" src="./image/Ecto/ecto4.jpg">
+              </a>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/1-375.jpg 375, ./image/1-480.jpg 480, ./image/1.jpg 800" data-src="./image/Ecto/ecto5.jpg" data-sub-html="<h4>Q0906+6930</h4><p>کوازار بسیار فشرده مرتبط با احتمالاً یک سیاهچاله ابر پرجرم در مرکز یک کهکشان بیضوی بسیار بزرگ و فعال. بلیزرها در میان پر انرژی‌ترین پدیده‌ها در جهان و یک موضوع مهم در اخترشناسی فراکهکشانی هستند....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto5.jpg">
+              </a>
+              <p class="text-secondary">Q0906+6930</p>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/2-375.jpg 375, ,/image/2-480.jpg 480, ./image/2.jpg 800" data-src="./image/Ecto/ecto6.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto6.jpg">
               </a>
           </li>
-          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/13-375.jpg 375, ./image/13-480.jpg 480, ./image/13.jpg 800" data-src="./image/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/13-375.jpg 375, ./image/13-480.jpg 480, ./image/13.jpg 800" data-src="./image/Ecto/ecto7.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
               <a href="">
-                  <img class="img-responsive" src="./image/thumb-13.jpg">
+                  <img class="img-responsive" src="./image/Ecto/ecto7.jpg">
               </a>
           </li>
-          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/4-375.jpg 375, ./image/4-480.jpg 480, ./image/4.jpg 800" data-src="image/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/4-375.jpg 375, ./image/4-480.jpg 480, ./image/4.jpg 800" data-src="./image/Ecto/ecto8.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
               <a href="">
-                  <img class="img-responsive" src="./image/thumb-4.jpg">
+                  <img class="img-responsive" src="./image/Ecto/ecto8.jpg">
+              </a>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/1-375.jpg 375, ./image/1-480.jpg 480, ./image/1.jpg 800" data-src="./image/Ecto/ecto10.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto10.jpg">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/2-375.jpg 375, ,/image/2-480.jpg 480, ./image/2.jpg 800" data-src="./image/Ecto/ecto11.jpg" data-sub-html="<h4>کمان ای*</h4><p>یک منبع قوی امواج رادیویی بسیار فشرده و پرجرم در مرکز کهکشان راه‌شیری است. تصور می‌رود که این جرم یک سیاه‌چاله ابرپرجرم باشد. از لحاظ ظاهری در مرز صورت فلکی کمان و عقرب قرار دارد.....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto11.jpg">
+              </a>
+              <p class="text-secondary">Sagittarius A</p>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/13-375.jpg 375, ./image/13-480.jpg 480, ./image/13.jpg 800" data-src="./image/Ecto/ecto9.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto9.jpg">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/4-375.jpg 375, ./image/4-480.jpg 480, ./image/4.jpg 800" data-src="./image/Ecto/ecto12.jpg" data-sub-html="<h4>1E1740.7-2942</h4><p>نام دیگر این سیاه چاله نابودگر بزرگ و یک میکرو آبشار را شیری در نزدیکی مرکز کهکشان و از  یک سیاه چاله و یک ستاره تشکیل شده است و از درخشان ترین منابع اشعه ایکس در منطقه اطراف مرکز کهکشانی است.</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto12.jpg">
+              </a>
+              <p class="text-secondary">1E1740.7-2942</p>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/1-375.jpg 375, ./image/1-480.jpg 480, ./image/1.jpg 800" data-src="./image/Ecto/ecto13.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto13.jpg">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/2-375.jpg 375, ,/image/2-480.jpg 480, ./image/2.jpg 800" data-src="./image/Ecto/ecto14.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto14.jpg">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="./image/13-375.jpg 375, ./image/13-480.jpg 480, ./image/13.jpg 800" data-src="./image/Ecto/ecto15.png" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto15.png">
+              </a>
+          </li>
+          <li class="col-xs-6 col-sm-4 col-md-3 wow fadeInUp infinite" data-responsive="./image/4-375.jpg 375, ./image/4-480.jpg 480, ./image/4.jpg 800" data-src="./image/Ecto/ecto17.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+              <a href="">
+                  <img class="img-responsive" src="./image/Ecto/ecto17.jpg">
               </a>
           </li>
       </ul>
+      <button class="donebtn animated bounce infinite"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></button>
   </div>
 
   </div>
 </div>
+</section>
 
   <div class="jumbotron text-center" style="margin-bottom:0">
     
@@ -858,6 +927,8 @@
   <script src="./scripts/Picturefill.min.js"></script>
   <script src="./scripts/lightgallery-all.min.js"></script>
   <script src="./scripts/jquery.mousewheel.min.js"></script>
+  <script src="./scripts/mdb.js"></script>
+  <script src="./scripts/popper.js"></script>
   <!-- <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script>
   <script src="//www.google-analytics.com/analytics.js"></script>
   <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
@@ -1046,14 +1117,22 @@
     $('#show-bholetext').show();
     })
 
+    $('.blackholegallery').hide();
+    $('#diamonds').click(function(){
+      $('.blackholegallery').show(1000);
+      $('#diamonds').hide(0);
+      $('.donebtn').show(0);
+    })
 
-    $(document).ready(function(){
-            $('#lightgallery').lightGallery();
-        });
+    $('.donebtn').click(function(){
+      $('.blackholegallery').slideUp(1000);
+      $('#diamonds').slideDown(1500);
+      $('.donebtn').hide(0);
+    })
 
-    $(document).ready(function(){
-            $('#ul-img').lightGallery();
-        });
+    $( document ).ready(function() {
+      new WOW().init();
+    });
    </script>
     <!------------------Scripts-End------------------->
     

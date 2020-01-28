@@ -890,6 +890,15 @@ display : block;
     margin-bottom: 25px;
  }
 
+  [data-theme="dark"]   .blackholegallery img{
+    border: none !important;
+    border-radius: none;
+  }
+
+  [data-theme="dark"] .about-artists #parm{
+    color: var(--globaltext);
+}
+
   [data-theme="dark"] .bg-light {
     background-color: #333 !important;
   }
@@ -1441,8 +1450,8 @@ nav .fa-bars{
 
 label{
     position: relative;
-    width: 38px;
-    height: 38px;
+    width: 38px !important;
+    height: 38px !important;
     cursor: pointer;
     border-radius: 50%;
     bottom: 5px;
@@ -1454,8 +1463,8 @@ label .btn{
     top:0;
     left: 0;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     background: #4d4c4c;
     border-radius: 50%;
     box-shadow:  0 3px 4px rgb(58, 57, 57),
@@ -1476,7 +1485,7 @@ label input[type="checkbox"]:checked ~ .btn{
 }
 
 label input[type="checkbox"]{
-    -webkit-appearance: none;
+    -webkit-appearance: none !important;
 }
 
 label .fa{
@@ -1735,6 +1744,7 @@ label input[type="checkbox"]:checked ~ .fa{
     direction: rtl;
     text-align: right;
     padding-bottom: 15px;
+
     
 }
 
@@ -1748,8 +1758,14 @@ label input[type="checkbox"]:checked ~ .fa{
     padding-right: 1.5rem;
 }
 
-.title h4{
-    font: normal 700 25px/12px var(--vazir);
+.project-aria h3{
+    font-family: var(--vazir);
+    font-size: 1.3em;
+    padding-top: 10px;
+}
+.project-aria h1{
+    font-family: var(--vazir);
+    font-weight: bold;
 }
 
 .our-project{
@@ -1842,8 +1858,8 @@ label input[type="checkbox"]:checked ~ .fa{
     padding: 10px 15px;
     background: #000;
     color: #fff;
-    font-size: 2.2em;
-    /* font-weight: bold; */
+    font-size: 1.8em;
+    font-weight: bold;
  }
  
 #stable p{
@@ -1875,6 +1891,7 @@ label input[type="checkbox"]:checked ~ .fa{
     max-width: 200px;
     margin-bottom: 20px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .cosmic span{
@@ -2040,7 +2057,8 @@ label input[type="checkbox"]:checked ~ .fa{
 }
 .text {
 	color: var(--lightblue);
-    display: block;
+  display: block;
+  
 }
 .btn-control {
 	background: #000000;
@@ -2136,12 +2154,15 @@ input::-webkit-slider-thumb {
     padding-top: 0;
     background:url(../image/smoke.png);
     font-family: var(--vazir);
+    font-weight: bold;
     padding-bottom: 50px;
     
 }
 
 .about-artists h1{
     padding-top: 10px;
+    font-family: var(--vazir);
+    font-weight: bold;
 }
 
 .about-artists h4{
@@ -2151,6 +2172,8 @@ input::-webkit-slider-thumb {
 .client a{
     text-decoration: none;
     color: var(--orange);
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .client i{
@@ -2163,16 +2186,17 @@ input::-webkit-slider-thumb {
    cursor: pointer;
 }
 
-.about-artists h5{
+.about-artists .paragraph{
     padding-top: 40px;
     direction: rtl;
     text-align: justify;
-    color: var(--globaltext);
-    font-size: 1.1em;
+    color: #000;
+    font-size: 1em;
+    font-family: var(--vazir);
 }
 
-.about-artists p{
-    font-size: 0.91em;
+.about-artists #parm{
+    font-size: 0.9em;
     direction: rtl;
     text-align: justify;
     color: #000;
@@ -2293,6 +2317,7 @@ input::-webkit-slider-thumb {
  .universe-text-secondary{
      color: #111;
      font-family: var(--vazir);
+     font-weight: bold;
      padding-right: 20px;
      font-size: 1em;
      padding: 15px;
@@ -3587,6 +3612,58 @@ input::-webkit-slider-thumb {
     padding-bottom: 80px;
   }
   
+  .blackholegallery img{
+    border: 3px solid var(--orange) !important;
+    border-radius: 10px;
+  }
+
+  .blackholegallery{
+    direction: rtl;
+    text-align: center;
+  }
+
+  .donebtn .fa{
+    padding: 5px;
+    font-size: 3em;
+    color: var(--orange);
+    cursor: pointer;
+  }
+  .donebtn{
+    border: none;
+    background: none;
+  }
+  .blackholegallery p{
+    
+  }
+  /* .donebtn::before, .donebtn::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #fff;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.donebtn::before{
+    top: -4px;
+    left: 10%;
+}
+
+.donebtn::after{
+    bottom: -4px;
+    right: 10%;
+}
+
+.donebtn:hover::before{
+    left: 80%;
+}
+
+.donebtn:hover::after{
+    right: 80%;
+} */
+
+
   /*# sourceMappingURL=lightgallery.css.map */
   
 

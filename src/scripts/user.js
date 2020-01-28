@@ -67,7 +67,11 @@ $(function() {
         }
       });
     })
-    
+    //اسلاید شو عکس های داخل سکشن ها
+    $('#ul-img').lightGallery();
+    $('#lightgallery').lightGallery();
+
+  
   });
 
   
