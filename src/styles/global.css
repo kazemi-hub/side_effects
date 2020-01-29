@@ -153,7 +153,7 @@ body{
         border: 1px solid var(--lightblue);
     }
 
-    .cosmic h1{
+    .cosmic h3{
         min-width: 100%;
     }
 
@@ -899,6 +899,18 @@ display : block;
     color: var(--globaltext);
 }
 
+  [data-theme="dark"] #gallery-content-bold{
+    color: var(--globaltext);
+  }
+
+  [data-theme="dark"]  .b-hole p{
+    color: var(--globaltext);
+  }
+
+  [data-theme="dark"] #blacklist{
+    color: var(--globaltext);
+  }
+
   [data-theme="dark"] .bg-light {
     background-color: #333 !important;
   }
@@ -1538,6 +1550,20 @@ label input[type="checkbox"]:checked ~ .fa{
     font-size: 1.5em;
 
 }
+
+#introduction h4{
+  font-family: var(--vazir);
+    color: #000;
+    padding: 10px;
+    margin-right: 0;
+    /* width: 200px; */
+    background-color: var(--lightblue);
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 15px;
+    direction: rtl;
+
+}
 #introduction p{
     color: var(--globaltext);
     
@@ -1730,6 +1756,20 @@ label input[type="checkbox"]:checked ~ .fa{
     background-repeat: no-repeat;
 }
 
+.project-aria h4{
+    font-weight: bold;
+}
+
+.project-aria h3{
+    font-weight: bold;
+    background-color: var(--lightblue);
+    width:200px;
+    border-radius: 15px;
+    padding: 10px;
+    color: #000 !important;
+    text-align: center;
+}
+
 .grid{
     padding: 0;
     margin-top: 0;
@@ -1882,6 +1922,12 @@ label input[type="checkbox"]:checked ~ .fa{
 }
 
 .cosmic h1{
+    direction: rtl;
+    font-family: var(--vazir); 
+    padding: 10px;
+    font-weight: bold;
+}
+.cosmic h3{
     direction: rtl;
     text-align: center;
     color: black; 
@@ -2362,8 +2408,30 @@ input::-webkit-slider-thumb {
 .diamond-grid{
     width: 100%;
     margin: 50px auto 0;
+    padding-bottom: 50px;
 }
 
+#gallery-content{
+  font-family: var(--vazir);
+  font-weight: bold;
+  direction: rtl;
+  text-align: center;
+  /* color: #000; */
+}
+
+#gallery-bgcontent{
+  font-weight: bold;
+  font-family: var(--vazir);
+  padding-bottom: 10px;
+}
+
+#gallery-content-bold{
+  font-weight: bold;
+  font-family: var(--vazir);
+  text-align: justify;
+  direction: rtl;
+  color: #000;
+}
 .diamonds {
     text-align: center;
     overflow: visible;
@@ -2473,12 +2541,20 @@ input::-webkit-slider-thumb {
 .b-hole h1{
     font-weight: bold;
     font-family: var(--vazir);
-    
+    padding-bottom: 15px;
 }
 
 .b-hole h3{
-    padding-bottom: 30px;
-    font-size: 1.5em;
+  direction: rtl;
+    text-align: center;
+    color: #000 !important; 
+    background-color: var(--lightblue); 
+    font-family: vazir; font-size: 1.4em; 
+    padding: 10px;
+    max-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 .b-hole span{
      color: #000;
@@ -2509,9 +2585,8 @@ input::-webkit-slider-thumb {
      color: var(--orange);
  }
 
-/*! lightgallery - v1.6.12 - 2019-02-19
-* http://sachinchoolur.github.io/lightGallery/
-* Copyright (c) 2019 Sachin N; Licensed GPLv3 */
+/*! lightgallery */
+
 @font-face {
     font-family: 'lg';
     src: url("../fonts/lg.eot?n1z373");
@@ -3632,8 +3707,19 @@ input::-webkit-slider-thumb {
     border: none;
     background: none;
   }
-  .blackholegallery p{
-    
+  .b-hole p{
+    text-align: justify;
+    color: #000;
+    font-weight: bold;
+  }
+
+  #blacklist{
+    font-weight: bold;
+    font-family: var(--vazir);
+    text-align: right;
+    direction: rtl;
+    font-size: 0.8em;
+    color: #000;
   }
   /* .donebtn::before, .donebtn::after{
     content: "";
@@ -3664,7 +3750,7 @@ input::-webkit-slider-thumb {
 } */
 
 
-  /*# sourceMappingURL=lightgallery.css.map */
+ 
   
 
 
@@ -3673,7 +3759,7 @@ input::-webkit-slider-thumb {
 
 
 
-
+/*-----------------------------Footer------------------------------*/
 
 .form-inline{
     direction: ltr;
