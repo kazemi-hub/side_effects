@@ -70,7 +70,7 @@ body {
 
 hr {
   box-sizing: content-box;
-  height: 0;
+  /* height: 0; */
   overflow: visible;
 }
 
@@ -418,12 +418,12 @@ h6, .h6 {
   line-height: 1.2;
 }
 
-hr {
+/* hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
+} */
 
 small,
 .small {

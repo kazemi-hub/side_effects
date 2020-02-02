@@ -24,23 +24,33 @@
 
     @font-face {
       font-family: vazir;
-      src: url(./Fonts/vazir-font-master/dist/Vazir.ttf) format("truetype"),
-        url(./Fonts/vazir-font-master/dist/Vazir.woff) format("woff"),
-        url(./Fonts/vazir-font-master/dist/Vazir-bold.woff) format("woff"),
-        url(./Fonts/vazir-font-master/dist/Vazir-bold.ttf) format("truetype"),
-        url(./Fonts/vazir-font-master/dist/Vazir.woff2) format("woff2"),
-        url(./Fonts/vazir-font-master/dist/Vazir-bold.woff2) format("woff2");
+       src: url(./Fonts/vazir-font-master/dist/Vazir.ttf) format("truetype"),
+            url(./Fonts/vazir-font-master/dist/Vazir.woff) format("woff"),
+            url(./Fonts/vazir-font-master/dist/Vazir-bold.woff) format("woff"),
+            url(./Fonts/vazir-font-master/dist/Vazir-bold.ttf) format("truetype"),
+            url(./Fonts/vazir-font-master/dist/Vazir.woff2) format("woff2"),
+            url(./Fonts/vazir-font-master/dist/Vazir-bold.woff2) format("woff2");
     }
 
     @font-face {
       font-family: Chaos and Pain;
-      src: url(./Fonts/ChaosandPain/chaosandpain.eot);
-      src: url(./Fonts/ChaosandPain/chaosandpainIE8.eot) format("embedded-opentype"),
-        url(./Fonts/ChaosandPain/ChaosandPain.woff2) format("woff2"),
-        url(./Fonts/ChaosandPain/ChaosandPain.woff) format("woff"),
-        url(./Fonts/ChaosandPain/ChaosandPain.ttf) format("truetype"),
-        url(./Fonts/ChaosandPain/chaosandPain.svg) format("svg");
+       src: url(./Fonts/ChaosandPain/chaosandpain.eot);
+       src: url(./Fonts/ChaosandPain/chaosandpainIE8.eot) format("embedded-opentype"),
+            url(./Fonts/ChaosandPain/ChaosandPain.woff2) format("woff2"),
+            url(./Fonts/ChaosandPain/ChaosandPain.woff) format("woff"),
+            url(./Fonts/ChaosandPain/ChaosandPain.ttf) format("truetype"),
+            url(./Fonts/ChaosandPain/chaosandPain.svg) format("svg");
     }
+
+    @font-face {
+      font-family: lg;
+       src: url(./fonts/lg.eot?n1z373);
+       src: url(./fonts/lg.eot?#iefixn1z373) format("embedded-opentype"),
+            url(./fonts/lg.woff?n1z373) format("woff"),
+            url(./fonts/lg.ttf?n1z373) format("truetype"),
+            url(./fonts/lg.svg?n1z373#lg) format("svg");
+  }
+
   </style>
 
 </head>
@@ -216,10 +226,10 @@
                       src="./image/PNG/spaceship.png" alt="بر فراز کیهان"></span></button></a>
               <a href="#سیاه-چاله" data-title="سیاهچاله‌ها"><button class="buttons"><span><img class="icon6"
                       src="./image/PNG/blackhole.png" alt="سیاهچاله‌ها"></span></button></a>
-              <a href="#" data-title="فضای میان‌ستاره‌ای"><button class="buttons"><span><img class="icon7"
+              <a href="#سیاه-چاله" data-title="فضای میان‌ستاره‌ای"><button class="buttons"><span><img class="icon7"
                       src="./image/PNG/ursa-minor.png" alt="فضای میان‌ستاره‌ای"></span></button></a>
-              <a href="#footer" data-title="ورود/تماس با ما"><button class="buttons"><span><img class="icon8"
-                      src="./image/PNG/satelite-radar.png" alt="ورود/تماس با ما"></span></button></a>
+              <a href="#اطلاعات" data-title="درباره ما"><button class="buttons"><span><img class="icon8"
+                      src="./image/PNG/satelite-radar.png" alt="درباره ما"></span></button></a>
               <label>
                 <input type="checkbox" name="" id="darkSwitch" title="حالت تاریک">
                 <span class="btn buttons"></span>
@@ -378,7 +388,7 @@
     <div class="container">
       <div class="project-title pb-5">
         <h1 class="title-h1">کیهان از نگاه هنرمندان</h1>
-        <h3 class="text-secondary">گالری اختصاصی</h3>
+        <h3 class="wow shake">گالری اختصاصی</h3>
       </div>
       <div class="button-group text-secondary">
         <button type="button" class="button text-secondary" id="btn1">مجموعه کامل</button>
@@ -517,7 +527,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-sm-12 wow fadeInLeft ">
+        <div class="col-sm-12 wow fadeInUp">
           <div id="stable">
             <h2 id="شهاب-سنگها" class="wow fadeInRight">شهاب سنگ ها</h2>
             <div class=" circle circle1">
@@ -545,7 +555,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 wow fadeInDown">
+        <div class="col-sm-12 wow fadeInRight">
           <div id="stable">
             <div class=" circle circle2">
               <img src="./image/comet-1.jpg">
@@ -585,7 +595,7 @@
         <div class="col-sm-12 col-md-12 col-lg-12" id="موسیقی-کیهانی">
           <div class="cosmic">
             <h1>سمفونی ستارگان خاموش</h1>
-            <h3 id="کیهان">موسیقی کیهانی</h3>
+            <h3 id="کیهان" class="wow shake">موسیقی کیهانی</h3>
 
             <span id="extened">
               موسیقی کیهانی اشاره دارد به نوای عارفانه ای از نت های هستی، تمامی آنچه که در پیرامون ما در جریان و حتی در
@@ -782,7 +792,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-12 band-links" title="لینک های اختصاصی">
+        <div class="col-12 band-links wow fadeInRight" title="لینک های اختصاصی">
           <a href="https://en.metal-tracker.ru/" target="_blank" title="Metal-tracker"><i
               class="fas fa-biohazard"></i></a>
           <a href="https://metal-archives.com/" target="_blank" title="Metal Archives"><i
@@ -908,7 +918,7 @@
           <div class="col-12">
             <div class="b-hole">
               <h1 class="title-h1" id="سیاه-چاله">حباب های نابودگر فضا-زمان!</h1>
-              <h3 class="text-secondary">سیاه چاله ها</h3>
+              <h3 class="wow shake">سیاه چاله ها</h3>
               <span>
                 سیاه‌چاله‌‌ها ناحیه‌ای از فضا-زمان هستند که بسیار متراکم بوده و جاذبه گرانشی بسیار شدیدی دارند به
                 گونه‌ای
@@ -1032,7 +1042,7 @@
     </div>
 
     <div class="container">
-      <div class="diamond-grid animated fadeInUp" data-wow-delay="5s" id="diamonds">
+      <div class="diamond-grid animated slideInRight" data-wow-delay="5s" id="diamonds">
         <div class="item ecto1 hoverable"><img src="./image/Ecto/ecto1.jpg" title="برای مشاهده کلیک کنید"></div>
         <div class="item ecto2"><img src="./image/Ecto/ecto2.jpg" title="برای مشاهده کلیک کنید"></div>
         <div class="item ecto3"><img src="./image/Ecto/ecto3.jpg" title="برای مشاهده کلیک کنید"></div>
@@ -1208,21 +1218,87 @@
     </div>
   </section>
 
+  <!-------------------------Interstellar Medium--------------------------->
+
+  <section id="Interstellar-Medium">
+    
+  </section>
   <!-------------------------------Footer---------------------------------->
 
-  <section>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="جستجو" aria-label="جستجو">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">برو</button>
-      </form>
-
-      <p>Footer</p>
-
+  <section id="اطلاعات" class="main-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-3 collg3 colmd12 colsm-6 col-12">
+          <div class="footer-box">
+            <h1 class="footer-logo">deadspace</h1>
+            <p>
+              فضای بی جان یک کنایه است سودمند برای بیداری. مهجور همچون انسانیت  و در آرزوی تفکر.
+               همسو با جهانی ناشناخته در ابعاد تاریک هستی قدم برمیداریم تا روشنگران راهی باشیم که بسیار فرسوده و نادیده گرفته شده است. ما خواهیم پوسید و نامی نخواهد ماند آنچه پابرجاست انسانیت و کیهان خواهد بود.
+               باشد که ما پیام آوران آگاهی در عصر حاضر باشیم. به امید دیدار...
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 collg3 colmd12 colsm-6 col-12">
+          <div class="footer-box">
+            <h2>پیوندهای داخلی:</h2>
+          <hr>
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">سیارات</a></li>
+            <li><a href="#">گالری</a></li>
+            <li><a href="#">موسیقی کیهانی</a></li>
+            <li><a href="#">سیاه‌چاله‌‌ها</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 collg3 colmd12 colsm-6 col-12">
+          <div class="footer-box">
+            <h2>صفحات دیگر ما:</h2>
+          <hr>
+          <ul>
+            <li><a href="#">متافیزیک و پیدایش جهان</a></li>
+            <li><a href="#">فرازمینی ها</a></li>
+            <li><a href="#">فرکانس کیهانی</a></li>
+            <li><a href="#">جهان های موازی</a></li>
+            <li><a href="#">پایان جهان</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 collg3 colmd12 colsm-6 col-12">
+          <div class="footer-box">
+            <h2>در تماس باشید</h2>
+          <hr>
+          <div class="footer-address">
+            <h6><a href="#"><i class="fa fa-map-marker"></i> اصفهان - باغ زیار....</a></h6>
+            <h6><a href="#"><i class="fa fa-phone"></i> تلفن: +98-9138658958</a></h6>
+            <h6><a href="kazemibot@gmail.com"><i class="fa fa-envelope"></i> kazemibot@gmail.com</a></h6>
+          </div>
+          <div class="footer-socialicons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-github"></i></a></li>
+              <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+              <li><a href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-------------------------------Footer-bottom--------------------------------->
+
+  <section id="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h5>  کلیه محتوای این وبسایت بصورت رایگان در اختیار شماست </h5>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-----------------------------Script-Links------------------------------>
 
   <section>
@@ -1253,11 +1329,11 @@
     <script src="./scripts/jquery.mousewheel.min.js"></script>
     <script src="./scripts/mdb.js"></script>
     <script src="./scripts/popper.js"></script>
-    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script>
+    <!-- <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.12&amp;appId=479637325536970"></script>
     <script src="//www.google-analytics.com/analytics.js"></script>
     <script src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
     <script src="https://apis.google.com/js/platform.js" gapi_processed="true">{ lang: 'en_US' }</script>
-    <script src="https://www.googletagmanager.com/gtag/js?id=AW-827833600"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=AW-827833600"></script> -->
   </section>
 
   <!----------------------------Scripts-Start------------------------------>
